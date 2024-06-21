@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-language" content="vi"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title data-react-helmet="true">Index</title>
+
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+    </head>
+
+    <body>
+    <div class="wrapper pr">
+        
+<img src="assets/img/bg-page-1-1.svg" alt="" class="imgFull">
+<main class="app">
+    <section class="account-info-section">
+        <h2 class="balooTammaExtraBold">Meimei89</h1>
+        <div class="diamon-will-claim">
+            <span class="icon-diamon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></span>
+            <span class="num bungeeRegular">0000.010250</span>
+        </div>
+        <div class="last-claim">
+            <p class="balooTammaRegular">Last claimed: <span class="num">0.025</span> GDM</p>
+        </div>
+    </section>
+    <section class="miner-section">
+        <div class="miner-section-content">
+            <div class="btn-left-group btn-group">
+                <a href="miner-event.html" class="btn-event">
+                    <img src="assets/img/btn-event.svg" alt="" class="imgFull">
+                </a>
+                <a href="javascript:void(0)" class="btn-loot">
+                    <img src="assets/img/btn-loot.svg" alt="" class="imgFull">
+                </a>
+            </div>
+            <div class="miner-info">
+                <div class="miner-info-top">
+                    <div class="text balooTammuduBold">MINNER</div>
+                    <div class="num bungeeRegular" data-number="0.000238">0.000238</div>
+                </div>
+                <div class="miner-img">
+                    <img src="assets/img/img-demo-1.png" alt="" class="imgFull">
+                </div>
+                <div class="miner-info-item">
+                    <div class="miner-item bg-bdrs-black">SPEED: <span class="color-blue bungeeRegular num">0.025</span><span class="color-purple">/HOUR</span></div>
+                    <div class="miner-item bg-bdrs-black">ENGINE: <span class="color-blue bungeeRegular num">+8%</span></div>
+                    <div class="miner-item bg-bdrs-black">STORAGE: <span class="color-blue bungeeRegular num">0.05</span><span class="color-purple">/TIME</span></div>
+                </div>
+            </div>
+            <div class="btn-right-group btn-group">
+                <a href="miner-daily.html" class="btn-daily">
+                    <img src="assets/img/btn-daily.svg" alt="" class="imgFull">
+                </a>
+                <a href="miner-rank.html" class="btn-rank">
+                    <img src="assets/img/btn-rank.svg" alt="" class="imgFull">
+                </a>
+            </div>
+        </div>
+        <div class="countdown-block">
+            <div class="icon">
+                <img src="assets/img/icon-clock.svg" alt="" class="imgFull">
+            </div>
+            <div class="timer bg-black">
+                <div class="hour bungeeRegular color-purple">00</div>
+                <span class="dot bungeeRegular color-purple">:</span>
+                <div class="minute bungeeRegular color-purple">00</div>
+                <span class="dot bungeeRegular color-purple">:</span>
+                <div class="second bungeeRegular color-purple">04</div>
+            </div>
+        </div>
+        <!-- Khi đồng hồ đếm ngược về 0 thì hiện nút claimed bên dưới, remove class hidden -->
+        <div class="claimed-block hidden">
+            <a href="javascript:void(0)" class="btn-claimed"><img src="assets/img/btn-claim-2.svg" alt="" class="imgFull"></a>
+        </div>
+    </section>
+</main>
+<section class="main-menu-section">
+    <a href="boost.html" class="btn-menu btn-boost">
+        <img src="assets/img/btn-boost.png" alt="" class="imgFull">
+    </a> 
+    <a href="offer.html" class="btn-menu btn-offer">
+        <img src="assets/img/btn-offer.png" alt="" class="imgFull">
+    </a>
+    <a href="miner.html" class="btn-menu btn-miner is-active">
+        <img src="assets/img/btn-miner.png" alt="" class="imgFull">
+    </a>
+    <a href="growth.html" class="btn-menu btn-growth">
+        <img src="assets/img/btn-growth.png" alt="" class="imgFull">
+    </a>
+    <a href="dapps.html" class="btn-menu btn-dapps">
+        <img src="assets/img/btn-dapps.png" alt="" class="imgFull">
+    </a>
+</section>
+
+        <!-- <div class="popup popupNotify px" id="popupNotify">
+    <div class="bg_drop px"></div>
+    <div class="popup_content pa">
+        <a href="javascript:void(0)" class="close_popup pa" title="Đóng lại">x</a>
+        <h2 class="logo"><img src="/viettel/assets//img/logo.svg" alt="" class="imgFull"></h2>
+        <div class="message pr">
+            Bạn đã hết lượt quay
+        </div>
+    </div>
+</div>
+
+<div class="popup px" id="popupLinkVoucher">
+    <div class="bg_drop px"></div>
+    <div class="popup_content pa">
+        <a href="javascript:void(0)" class="close_popup pa" title="Đóng lại">x</a>
+        <div class="content pr">
+            <div class="step2">
+                <div class="fwb wspace5">Cám ơn Quý khách đã hoàn thành khảo sát và chia sẻ ý kiến! Câu trả lời của Quý khách đã được ghi nhận!</div>
+                <div class="form">
+                    <div class="rows">
+                        <label class="fwb">Khách hàng vui lòng truy cập đường link dưới đây để nhận mã giảm giá/voucher:</label>
+                        <a class="link-voucher" href="javascript:void(0)" title="Bấm vào link này để nhận mã voucher" target="_blank">Bấm vào link này để nhận mã voucher</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup px" id="popupNotifyCode">
+    <div class="bg_drop px"></div>
+    <div class="popup_content pa">
+        <a href="javascript:void(0)" class="close_popup pa" title="Đóng lại">x</a>
+        <div class="content pr">
+            <div class="step2">
+                <div class="fwb wspace5">Cám ơn Quý khách đã hoàn thành khảo sát và chia sẻ ý kiến! Câu trả lời của Quý khách đã được ghi nhận!</div>
+                <div class="form">
+                    <div class="rows">
+                        <label class="fwb">Quý khách có cơ hội tham gia quay số may mắn với mã dự thưởng là:</label>
+                        <input class="tac colorRed fwb maDuThuong" type="text" name="maDuThuong" value="NKAHJFDNN" readonly>
+                    </div>
+                    <div class="rows">
+                        <label class="fz21">Quý khách vui lòng lưu lại mã dự thưởng để tham gia quay số và xác minh trúng thưởng về sau.</label>
+                        <button class="myBtn" id="btnQuaySo">Đồng ý</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup px" id="popupStep3">
+    <div class="bg_drop px"></div>
+    <div class="popup_content pa">
+        <a href="javascript:void(0)" class="close_popup pa" title="Đóng lại">x</a>
+        <div class="content pr">
+            <div class="step2">
+                <div class="wspace5">Chào mừng Quý khách đến với chương trình</div>
+                <div class="form mt40">
+                    <div class="rows mt27">
+                        <label for="maDuThuong">Quý khách vui lòng nhập lại mã dự thưởng để tiến hành quay số trúng thưởng</label>
+                        <input class="tac" type="text" id="step3_code" name="maDuThuong" placeholder="Nhập mã dự thưởng">
+                        <input type="hidden" id="step3_token" value="ANCHDKKK" />
+                    </div>
+                    <button class="myBtn" id="popup_step3_start">Bắt đầu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+    </div>
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/page_all.js"></script>
+    </body>
+</html>
+
+
