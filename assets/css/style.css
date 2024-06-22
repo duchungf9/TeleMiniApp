@@ -663,7 +663,9 @@ form {
     -moz-background-size: 100%;
          background-size: 100%;
     padding: 6.6666666667vw 8vw 4vw;
-    height: 152.2666666667vw;
+    height: -webkit-calc(100% - 31.2vw);
+    height: -moz-calc(100% - 31.2vw);
+    height: calc(100% - 31.2vw);
   }
   .speed-page-section.miner-event, .speed-page-section.miner-rank {
     padding-left: 2.6666666667vw;
@@ -880,6 +882,9 @@ form {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 4vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
   .speed-page-section .speed-page-content .bottom-group a {
     display: block;
@@ -1711,9 +1716,6 @@ form {
     height: -webkit-calc(100% - 31.2vw);
     height: -moz-calc(100% - 31.2vw);
     height: calc(100% - 31.2vw);
-  }
-  .modal-slide-up.modalGrowthQrcode {
-    height: 152.2666666667vw;
   }
   .modal-slide-up.slide-up {
     bottom: 0;
