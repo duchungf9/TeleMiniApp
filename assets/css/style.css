@@ -609,7 +609,7 @@ form {
     background: url(../../assets/img/bg-box-2.svg) center top no-repeat;
     -moz-background-size: 100%;
          background-size: 100%;
-    padding: 4.2666666667vw 4vw;
+    padding: 2.6666666667vw 4vw;
     margin-top: -19.2vw;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1109,7 +1109,7 @@ form {
     -webkit-border-radius: 2.6666666667vw;
        -moz-border-radius: 2.6666666667vw;
             border-radius: 2.6666666667vw;
-    margin-bottom: 3.2vw;
+    margin-bottom: 2.6666666667vw;
   }
   .gdm-bar .gdm-bar-item .icon {
     margin-right: 2.1333333333vw;
@@ -2142,7 +2142,7 @@ form {
   }
   .speed-page-section .speed-page-content .top-group .text {
     font-size: 14px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0;
     line-height: 18px;
   }
   .speed-page-section .speed-page-content .top-group .btn-rank {
