@@ -14,7 +14,7 @@
     <body>
     <div class="wrapper pr">
         
-<img src="assets/img/bg-page-1.svg" alt="" class="imgFull pr">
+<img src="assets/img/bg-page.svg" alt="" class="imgFull pr bg-page">
 <div class="bg-float">
     <img src="assets/img/bg-float.svg" alt="" class="imgFull pr">
 </div>
@@ -32,7 +32,7 @@
     <section class="total-speed-section">
         <h2 class="title balooTammaRegular">TOTAL SPEED: <span class="num color-blue">0.025</span> GDM/h</h2>
         <div class="total-speed-content">
-            <a href="boost-speed.html" class="total-speed-item btn-fullwidth bg-gradient">
+            <a href="javascript:void(0)" class="total-speed-item btn-fullwidth bg-gradient" onclick="showModalSlideUp('.modalBoostSpeed')">
                <div class="speed-item-contain bg-black">
                     <div class="icon-speed"><img src="assets/img/icon-speed.svg" alt="" class="imgFull"></div>
                     <div class="num-speed">
@@ -43,7 +43,7 @@
                     <div class="icon-arrow"></div>
                </div>
             </a>
-            <a href="boost-engine.html" class="total-speed-item btn-fullwidth bg-gradient">
+            <a href="javascript:void(0)" class="total-speed-item btn-fullwidth bg-gradient" onclick="showModalSlideUp('.modalBoostEngine')">
                 <div class="speed-item-contain bg-black">
                     <div class="icon-speed"><img src="assets/img/icon-engine.svg" alt="" class="imgFull"></div>
                     <div class="num-speed">
@@ -59,7 +59,7 @@
     <section class="total-speed-section">
         <h2 class="title balooTammaRegular">TOTAL STORAGE: <span class="num color-blue">0.05</span> GDM</h2>
         <div class="total-speed-content">
-            <a href="boost-storage.html" class="total-speed-item btn-fullwidth bg-gradient">
+            <a href="javascript:void(0)" class="total-speed-item btn-fullwidth bg-gradient" onclick="showModalSlideUp('.modalBoostStorage')">
                <div class="speed-item-contain bg-black">
                     <div class="icon-speed"><img src="assets/img/icon-storage.svg" alt="" class="imgFull"></div>
                     <div class="num-speed">
@@ -70,7 +70,7 @@
                     <div class="icon-arrow"></div>
                </div>
             </a>
-            <a href="boost-cloud.html" class="total-speed-item btn-fullwidth bg-gradient">
+            <a href="javascript:void(0)" class="total-speed-item btn-fullwidth bg-gradient" onclick="showModalSlideUp('.modalBoostCloud')">
                 <div class="speed-item-contain bg-black">
                     <div class="icon-speed"><img src="assets/img/icon-containers.svg" alt="" class="imgFull"></div>
                     <div class="num-speed">
@@ -84,6 +84,186 @@
         </div>
     </section>
 </main>
+<section class="speed-page-section modal-slide-up modalBoostSpeed">
+    <a href="javascript:void(0)" class="btn-close">
+        <img src="assets/img/btn-x.png" alt="" class="imgFull">
+    </a>
+    <div class="speed-page-content">
+        <div class="speed-need-upgrade">
+            <div class="speed-upgrade-item future-level btn-fullwidth bg-gradient">
+                <div class="speed-upgrade-item-contain bg-purple">
+                    <div class="bungeeRegular">CLOUD: 0.038</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular color-gray">more storage</div>
+                </div>
+            </div>
+            <div class="speed-upgrade-item next-level btn-fullwidth bg-gradient">
+                <div class="speed-upgrade-item-contain bg-black">
+                    <div class="bungeeRegular">CLOUD: 0.030</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular color-gray">more storage</div>
+                </div>
+            </div>
+        </div>
+        <div class="speed-current">
+            <div class="chart">
+                <div class="chart-content">
+                    <div class="chart-item"></div>
+                    <div class="chart-item chart-item-ac"></div>
+                    <div class="chart-item"></div>
+                </div>
+            </div>
+            <div class="speed-current-claimed btn-fullwidth bg-gradient">
+                <div class="speed-current-claimed-contain bg-blue pr">
+                    <div class="bungeeRegular">CLOUD: 0.020</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular">more storage</div>
+                    <a href="#" class="btn-claimed"><img src="assets/img/btn-current.png" alt="" class="imgFull"></a>
+                </div>
+            </div>
+        </div>
+        <div class="upgrade-speed">
+            <a href="#" class="btn-upgrade" onclick="showPopup('Upgraded successfully!');">
+                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>0.4
+            </a>
+        </div>
+    </div>
+</section>
+<section class="speed-page-section modal-slide-up modalBoostCloud">
+    <a href="javascript:void(0)" class="btn-close">
+        <img src="assets/img/btn-x.png" alt="" class="imgFull">
+    </a>
+    <div class="speed-page-content">
+        <div class="speed-need-upgrade">
+            <div class="speed-upgrade-item future-level btn-fullwidth bg-gradient">
+                <div class="speed-upgrade-item-contain bg-purple">
+                    <div class="bungeeRegular">CLOUD: 0.038</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular color-gray">more storage</div>
+                </div>
+            </div>
+            <div class="speed-upgrade-item next-level btn-fullwidth bg-gradient">
+                <div class="speed-upgrade-item-contain bg-black">
+                    <div class="bungeeRegular">CLOUD: 0.030</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular color-gray">more storage</div>
+                </div>
+            </div>
+        </div>
+        <div class="speed-current">
+            <div class="chart">
+                <div class="chart-content">
+                    <div class="chart-item"></div>
+                    <div class="chart-item chart-item-ac"></div>
+                    <div class="chart-item"></div>
+                </div>
+            </div>
+            <div class="speed-current-claimed btn-fullwidth bg-gradient">
+                <div class="speed-current-claimed-contain bg-blue pr">
+                    <div class="bungeeRegular">CLOUD: 0.020</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular">more storage</div>
+                    <a href="#" class="btn-claimed"><img src="assets/img/btn-current.png" alt="" class="imgFull"></a>
+                </div>
+            </div>
+        </div>
+        <div class="upgrade-speed">
+            <a href="#" class="btn-upgrade" onclick="showPopup('Upgraded successfully!');">
+                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>0.4
+            </a>
+        </div>
+    </div>
+</section>
+<section class="speed-page-section modal-slide-up modalBoostEngine">
+    <a href="javascript:void(0)" class="btn-close">
+        <img src="assets/img/btn-x.png" alt="" class="imgFull">
+    </a>
+    <div class="speed-page-content">
+        <div class="speed-need-upgrade">
+            <div class="speed-upgrade-item future-level btn-fullwidth bg-gradient">
+                <div class="speed-upgrade-item-contain bg-purple">
+                    <div class="bungeeRegular">ENGINE: +2%</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular color-gray">increase in speed</div>
+                </div>
+            </div>
+            <div class="speed-upgrade-item next-level btn-fullwidth bg-gradient">
+                <div class="speed-upgrade-item-contain bg-black">
+                    <div class="bungeeRegular">ENGINE: +1.5%</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular color-gray">increase in speed</div>
+                </div>
+            </div>
+        </div>
+        <div class="speed-current">
+            <div class="chart">
+                <div class="chart-content">
+                    <div class="chart-item"></div>
+                    <div class="chart-item chart-item-ac"></div>
+                    <div class="chart-item"></div>
+                </div>
+            </div>
+            <div class="speed-current-claimed btn-fullwidth bg-gradient">
+                <div class="speed-current-claimed-contain bg-blue pr">
+                    <div class="bungeeRegular">ENGINE: +1%</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular">increase in speed</div>
+                    <a href="#" class="btn-claimed"><img src="assets/img/btn-current.png" alt="" class="imgFull"></a>
+                </div>
+            </div>
+        </div>
+        <div class="upgrade-speed">
+            <a href="#" class="btn-upgrade" onclick="showPopup('Upgraded successfully!');">
+                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>0.4
+            </a>
+        </div>
+    </div>
+</section>
+<section class="speed-page-section modal-slide-up modalBoostStorage">
+    <a href="javascript:void(0)" class="btn-close">
+        <img src="assets/img/btn-x.png" alt="" class="imgFull">
+    </a>
+    <div class="speed-page-content">
+        <div class="speed-need-upgrade">
+            <div class="speed-upgrade-item future-level btn-fullwidth bg-gradient">
+                <div class="speed-upgrade-item-contain bg-purple">
+                    <div class="bungeeRegular">STORAGE: 4.038</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular color-gray">maximum</div>
+                </div>
+            </div>
+            <div class="speed-upgrade-item next-level btn-fullwidth bg-gradient">
+                <div class="speed-upgrade-item-contain bg-black">
+                    <div class="bungeeRegular">STORAGE: 4.030</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular color-gray">maximum</div>
+                </div>
+            </div>
+        </div>
+        <div class="speed-current">
+            <div class="chart">
+                <div class="chart-content">
+                    <div class="chart-item"></div>
+                    <div class="chart-item chart-item-ac"></div>
+                    <div class="chart-item"></div>
+                </div>
+            </div>
+            <div class="speed-current-claimed btn-fullwidth bg-gradient">
+                <div class="speed-current-claimed-contain bg-blue pr">
+                    <div class="bungeeRegular">STORAGE: 4.028</div>
+                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                    <div class="text balooTammaRegular">maximum</div>
+                    <a href="#" class="btn-claimed"><img src="assets/img/btn-current.png" alt="" class="imgFull"></a>
+                </div>
+            </div>
+        </div>
+        <div class="upgrade-speed">
+            <a href="#" class="btn-upgrade" onclick="showPopup('Upgraded successfully!');">
+                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>0.4
+            </a>
+        </div>
+    </div>
+</section>
 <section class="main-menu-section">
     <a href="boost.html" class="btn-menu btn-boost is-active">
         <img src="assets/img/btn-boost.png" alt="" class="imgFull">
@@ -97,7 +277,7 @@
     <a href="growth.html" class="btn-menu btn-growth">
         <img src="assets/img/btn-growth.png" alt="" class="imgFull">
     </a>
-    <a href="dapps.html" class="btn-menu btn-dapps">
+    <a href="#" class="btn-menu btn-dapps">
         <img src="assets/img/btn-dapps.png" alt="" class="imgFull">
     </a>
 </section>
@@ -110,8 +290,7 @@
 
     </div>
 
-    <!-- <script src="./assets/js/jquery-3.7.1.min.js"></script> -->
-    <script src="./assets/js/jquery-1.11.1.min.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/page_all.js"></script>
     </body>
 </html>

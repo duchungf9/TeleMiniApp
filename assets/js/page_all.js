@@ -9,9 +9,10 @@
   // Chuyển đồi tab ở trang Rank và Event
   $('.tab-panel a').click(function () {
     var tabPanel = $(this).data('panel');
+    var parent = $(this).data('modal');
     $(this).siblings().removeClass('is-active');
     $(this).addClass('is-active');
-    $('.tab-content').removeClass('is-active');
+    $(parent).find('.tab-content').removeClass('is-active');
     $(tabPanel).addClass('is-active');
   }); // Total receive tăng từ 0 đến số hiện tại
 
@@ -19,7 +20,7 @@
     $(this).prop('Counter', 0).animate({
       Counter: parseFloat($('.countTotalReceive').text())
     }, {
-      duration: 10000,
+      duration: 2000,
       easing: 'swing',
       step: function (now) {
         $(this).text(now);
@@ -68,4 +69,12 @@ function showNotifyLooted(msg) {
   setTimeout(function () {
     $('.notify-looted-section').removeClass('show-notify-looted');
   }, 3000);
+}
+
+function showModalSlideUp(modalName) {
+  $(modalName).addClass('slide-up');
+  var btnClose = $(modalName).find('.btn-close');
+  $(btnClose).click(function () {
+    $(modalName).removeClass('slide-up');
+  });
 }

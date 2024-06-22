@@ -435,8 +435,8 @@ form {
   }
   .wrapper {
     background: #1d0a55;
-    min-height: 100%;
     width: 100%;
+    height: 100%;
     overflow: hidden;
   }
   .btn-close {
@@ -563,7 +563,7 @@ form {
     margin-bottom: 5.3333333333vw;
   }
   .total-speed-section {
-    margin: 8.8vw 0 15.4666666667vw;
+    margin: 5.3333333333vw 0 13.3333333333vw;
     padding: 0 4.8vw;
   }
   .total-speed-section .total-speed-item {
@@ -605,15 +605,15 @@ form {
          background-size: contain;
   }
   .main-menu-section {
-    position: -webkit-sticky;
-    position: sticky;
+    position: absolute;
+    width: 100%;
     bottom: 0;
-    margin-top: -32vw;
     z-index: 1;
     background: url(../../assets/img/bg-box-2.svg) center top no-repeat;
     -moz-background-size: 100%;
          background-size: 100%;
-    padding: 6.4vw 4vw;
+    padding: 4.2666666667vw 4vw;
+    margin-top: -19.2vw;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -659,10 +659,10 @@ form {
     position: absolute;
     bottom: 0;
     z-index: 2;
-    background: url(../../assets/img/bg-box-3.svg) center top no-repeat #2f1d8c;
+    background: url(../../assets/img/bg-box-3.svg) center top no-repeat #2f1d8b;
     -moz-background-size: 100%;
          background-size: 100%;
-    padding: 8vw;
+    padding: 6.6666666667vw 8vw 4vw;
     height: 152.2666666667vw;
   }
   .speed-page-section.miner-event, .speed-page-section.miner-rank {
@@ -762,7 +762,7 @@ form {
     bottom: -4vw;
   }
   .speed-page-section .speed-page-content .upgrade-speed {
-    margin-top: 13.3333333333vw;
+    margin-top: 8vw;
   }
   .speed-page-section .speed-page-content .upgrade-speed .btn-upgrade {
     width: 48vw;
@@ -770,7 +770,7 @@ form {
     background: url(../../assets/img/btn-upgrade-2.png) no-repeat;
     -moz-background-size: 100%;
          background-size: 100%;
-    margin: 22.1333333333vw auto 0;
+    margin: 13.3333333333vw auto 0;
     padding: 2.9333333333vw;
     color: #000;
     font-family: Bungee-Regular, sans-serif;
@@ -891,7 +891,7 @@ form {
     width: 62.9333333333vw;
   }
   .speed-page-section .speed-page-content .qrcode-block {
-    padding: 28.5333333333vw 0 0 0;
+    padding: 25.3333333333vw 0 0 0;
   }
   .speed-page-section .speed-page-content .qrcode-block .img-qrcode {
     width: 49.6vw;
@@ -984,8 +984,8 @@ form {
   }
   .miner-section .miner-info-top {
     text-align: center;
-    height: 21.3333333333vw;
-    padding: 5.8666666667vw 0 0 0;
+    height: 19.4666666667vw;
+    padding: 4.8vw 0 0 0;
     line-height: 4.8vw;
   }
   .miner-section .miner-info-top .text {
@@ -1026,19 +1026,46 @@ form {
     margin: auto;
   }
   .miner-section .miner-info-item {
-    padding: 0 4.5333333333vw;
+    width: 77.3333333333vw;
+    margin-left: -10.6666666667vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .miner-section .miner-info-item .miner-item {
+    height: auto;
+    line-height: 4.8vw;
+    -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+            border-radius: 15px;
+    width: 36.8vw;
+    padding: 1.3333333333vw 0;
     margin-bottom: 1.3333333333vw;
     color: #fff;
     font-size: 3.7333333333vw;
+    text-align: center;
     font-family: BalooTamma-Regular, sans-serif;
   }
+  .miner-section .miner-info-item .miner-item p {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
   .miner-section .miner-info-item .miner-item .num {
-    font-size: 4.8vw;
+    font-size: 4.2666666667vw;
   }
   .miner-section .countdown-block {
-    margin-top: 5.3333333333vw;
+    margin-top: 4vw;
+  }
+  .miner-section .btn-group {
+    margin-top: 4.2666666667vw;
   }
   .miner-section .btn-group a {
     display: block;
@@ -1048,7 +1075,7 @@ form {
   .miner-section .miner-info {
     margin-top: 8vw;
     width: 56vw;
-    height: 93.0666666667vw;
+    height: 80.8vw;
     background: url(../../assets/img/bg-box-4.svg) no-repeat;
     -moz-background-size: 100%;
          background-size: 100%;
@@ -1229,7 +1256,7 @@ form {
     margin: 0;
   }
   .notify-section {
-    padding-top: 32.8vw;
+    padding-top: 28vw;
   }
   .notify-section h2 {
     font-size: 5.3333333333vw;
@@ -1409,6 +1436,16 @@ form {
          -o-animation: zoomOut 1.5s infinite alternate;
             animation: zoomOut 1.5s infinite alternate;
   }
+  .bg-float img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .bg-page {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .loading-section {
     width: 100%;
     height: 100%;
@@ -1441,7 +1478,7 @@ form {
   }
   .loot-section .upgrade-loot {
     position: absolute;
-    top: 130.6666666667vw;
+    top: 119.4666666667vw;
     height: 19.7333333333vw;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1495,8 +1532,9 @@ form {
   .loot-section .hack {
     position: absolute;
     pointer-events: none;
+    width: 100%;
     left: 0;
-    top: 24.5333333333vw;
+    top: 22.6666666667vw;
   }
   .loot-section .hack .img-hacker {
     width: 100%;
@@ -1624,7 +1662,7 @@ form {
   }
   .notify-looted-section .notify-looted-content {
     position: absolute;
-    top: 92vw;
+    top: 90.1333333333vw;
     -webkit-transform: translateX(-50%);
        -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -1662,6 +1700,24 @@ form {
   }
   .notify-looted-section .notify-looted-content .icon img {
     width: 7.7333333333vw;
+  }
+  .modal-slide-up {
+    bottom: -100%;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    opacity: 0;
+    height: -webkit-calc(100% - 31.2vw);
+    height: -moz-calc(100% - 31.2vw);
+    height: calc(100% - 31.2vw);
+  }
+  .modal-slide-up.modalGrowthQrcode {
+    height: 152.2666666667vw;
+  }
+  .modal-slide-up.slide-up {
+    bottom: 0;
+    opacity: 1;
   }
 }
 @media (min-width: 768px) {
@@ -1706,7 +1762,7 @@ form {
   }
   .wrapper {
     width: 375px;
-    height: 710px;
+    height: 642px;
     margin: auto;
     overflow: hidden;
     background: #1d0a55;
@@ -1735,8 +1791,7 @@ form {
     background: url(../../assets/img/bg-box-2.svg) center top no-repeat;
     -moz-background-size: 100%;
          background-size: 100%;
-    padding: 24px 15px;
-    margin-top: -120px;
+    padding: 16px 15px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -1867,7 +1922,7 @@ form {
     margin-bottom: 20px;
   }
   .total-speed-section {
-    margin: 33px 0 58px;
+    margin: 20px 0 50px;
     padding: 0 18px;
   }
   .total-speed-section .total-speed-item {
@@ -1913,11 +1968,11 @@ form {
     position: absolute;
     bottom: 0;
     z-index: 2;
-    background: url(../../assets/img/bg-box-3.svg) center top no-repeat #2f1d8c;
+    background: url(../../assets/img/bg-box-3.svg) center top no-repeat;
     -moz-background-size: 100%;
          background-size: 100%;
-    padding: 30px;
-    height: 571px;
+    padding: 25px 30px 15px;
+    height: 526px;
   }
   .speed-page-section.miner-event, .speed-page-section.miner-rank {
     padding-left: 10px;
@@ -2016,7 +2071,7 @@ form {
     bottom: -15px;
   }
   .speed-page-section .speed-page-content .upgrade-speed {
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .speed-page-section .speed-page-content .upgrade-speed .btn-upgrade {
     width: 180px;
@@ -2024,7 +2079,7 @@ form {
     background: url(../../assets/img/btn-upgrade-2.png) no-repeat;
     -moz-background-size: 100%;
          background-size: 100%;
-    margin: 83px auto 0;
+    margin: 50px auto 0;
     padding: 11px;
     color: #000;
     font-family: Bungee-Regular, sans-serif;
@@ -2050,7 +2105,7 @@ form {
     width: 29px;
   }
   .speed-page-section .speed-page-content .upgrade-speed .btn-ok {
-    margin-top: 10px;
+    margin-top: 8px;
     display: block;
   }
   .speed-page-section .speed-page-content .upgrade-speed .burn {
@@ -2108,7 +2163,6 @@ form {
   }
   .speed-page-section .speed-page-content .total-received .num {
     font-size: 16px;
-    width: 60px;
   }
   .speed-page-section .speed-page-content .total-received .icon {
     width: 24px;
@@ -2146,7 +2200,7 @@ form {
     width: 236px;
   }
   .speed-page-section .speed-page-content .qrcode-block {
-    padding: 107px 0 0 0;
+    padding: 95px 0 0 0;
   }
   .speed-page-section .speed-page-content .qrcode-block .img-qrcode {
     width: 186px;
@@ -2239,8 +2293,8 @@ form {
   }
   .miner-section .miner-info-top {
     text-align: center;
-    height: 80px;
-    padding: 22px 0 0 0;
+    height: 73px;
+    padding: 18px 0 0 0;
     line-height: 18px;
   }
   .miner-section .miner-info-top .text {
@@ -2281,19 +2335,46 @@ form {
     margin: auto;
   }
   .miner-section .miner-info-item {
-    padding: 0 17px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 290px;
+    margin-left: -40px;
   }
   .miner-section .miner-info-item .miner-item {
+    line-height: 18px;
+    -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+            border-radius: 15px;
     margin-bottom: 5px;
+    width: 138px;
+    padding: 5px 0;
+    text-align: center;
+    height: auto;
     color: #fff;
     font-size: 14px;
     font-family: BalooTamma-Regular, sans-serif;
   }
+  .miner-section .miner-info-item .miner-item p {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
   .miner-section .miner-info-item .miner-item .num {
-    font-size: 18px;
+    font-size: 16px;
   }
   .miner-section .countdown-block {
-    margin-top: 20px;
+    margin-top: 15px;
+  }
+  .miner-section .btn-group {
+    margin-top: 16px;
   }
   .miner-section .btn-group a {
     display: block;
@@ -2303,7 +2384,7 @@ form {
   .miner-section .miner-info {
     margin-top: 30px;
     width: 210px;
-    height: 349px;
+    height: 303px;
     background: url(../../assets/img/bg-box-4.svg) no-repeat;
     -moz-background-size: 100%;
          background-size: 100%;
@@ -2484,7 +2565,7 @@ form {
     margin: 0;
   }
   .notify-section {
-    padding-top: 123px;
+    padding-top: 105px;
   }
   .notify-section h2 {
     font-size: 20px;
@@ -2664,6 +2745,16 @@ form {
          -o-animation: zoomOut 1.5s infinite alternate;
             animation: zoomOut 1.5s infinite alternate;
   }
+  .bg-float img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .bg-page {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .loading-section {
     width: 100%;
     height: 100%;
@@ -2696,7 +2787,7 @@ form {
   }
   .loot-section .upgrade-loot {
     position: absolute;
-    top: 490px;
+    top: 448px;
     height: 74px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -2751,7 +2842,8 @@ form {
     position: absolute;
     pointer-events: none;
     left: 0;
-    top: 92px;
+    top: 85px;
+    width: 100%;
   }
   .loot-section .hack .img-hacker {
     width: 100%;
@@ -2879,7 +2971,7 @@ form {
   }
   .notify-looted-section .notify-looted-content {
     position: absolute;
-    top: 345px;
+    top: 338px;
     -webkit-transform: translateX(-50%);
        -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -2917,6 +3009,18 @@ form {
   }
   .notify-looted-section .notify-looted-content .icon img {
     width: 29px;
+  }
+  .modal-slide-up {
+    bottom: -100%;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    opacity: 0;
+  }
+  .modal-slide-up.slide-up {
+    bottom: 0;
+    opacity: 1;
   }
 }
 @-webkit-keyframes zoomOut {
