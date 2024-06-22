@@ -847,7 +847,7 @@ form {
     width: calc(100% - 17.0666666667vw);
   }
   .speed-page-section .speed-page-content .total-received {
-    margin-top: 4vw;
+    margin-top: 3.4666666667vw;
     font-size: 4vw;
     text-align: center;
     color: #fff;
@@ -1762,7 +1762,7 @@ form {
   }
   .wrapper {
     width: 375px;
-    height: 642px;
+    height: 590px;
     margin: auto;
     overflow: hidden;
     background: #1d0a55;
@@ -1791,7 +1791,7 @@ form {
     background: url(../../assets/img/bg-box-2.svg) center top no-repeat;
     -moz-background-size: 100%;
          background-size: 100%;
-    padding: 16px 15px;
+    padding: 10px 15px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -1972,7 +1972,7 @@ form {
     -moz-background-size: 100%;
          background-size: 100%;
     padding: 25px 30px 15px;
-    height: 526px;
+    height: 508px;
   }
   .speed-page-section.miner-event, .speed-page-section.miner-rank {
     padding-left: 10px;
@@ -2278,6 +2278,7 @@ form {
   }
   .miner-section {
     padding: 0 15px;
+    margin-top: -20px;
   }
   .miner-section .miner-section-content {
     display: -webkit-box;
@@ -2390,11 +2391,11 @@ form {
          background-size: 100%;
   }
   .miner-section .claimed-block {
-    margin-top: 15px;
+    margin-top: 6px;
   }
   .miner-section .claimed-block a {
     display: block;
-    width: 252px;
+    width: 240px;
     margin: auto;
   }
   .gdm-bar .gdm-bar-item {
@@ -2416,7 +2417,7 @@ form {
     -webkit-border-radius: 10px;
        -moz-border-radius: 10px;
             border-radius: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
   .gdm-bar .gdm-bar-item .icon {
     margin-right: 8px;
@@ -2452,7 +2453,7 @@ form {
     margin-left: 5px;
   }
   .gdm-bar.is-claimed {
-    margin-top: 30px;
+    margin-top: 26px;
   }
   .gdm-bar.is-claimed .gdm-bar-item {
     -webkit-filter: brightness(0.6) contrast(0.6);
@@ -2787,7 +2788,7 @@ form {
   }
   .loot-section .upgrade-loot {
     position: absolute;
-    top: 448px;
+    top: 413px;
     height: 74px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -2842,7 +2843,7 @@ form {
     position: absolute;
     pointer-events: none;
     left: 0;
-    top: 85px;
+    top: 75px;
     width: 100%;
   }
   .loot-section .hack .img-hacker {
@@ -2850,7 +2851,7 @@ form {
   }
   .loot-section .hack .notiffy-box {
     width: 268px;
-    margin: 10px auto 0;
+    margin: 0 auto;
     font-size: 18px;
     font-family: BalooTamma-Regular, sans-serif;
     color: #fff;
@@ -2860,7 +2861,7 @@ form {
     -webkit-border-radius: 10px;
        -moz-border-radius: 10px;
             border-radius: 10px;
-    padding: 10px 20px;
+    padding: 5px 20px;
   }
   .loot-section .hack .progress-bar {
     width: 253px;
@@ -2971,7 +2972,7 @@ form {
   }
   .notify-looted-section .notify-looted-content {
     position: absolute;
-    top: 338px;
+    top: 318px;
     -webkit-transform: translateX(-50%);
        -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -2979,7 +2980,7 @@ form {
             transform: translateX(-50%);
     left: 50%;
     width: 268px;
-    height: 78px;
+    height: 69px;
     font-size: 18px;
     font-family: BalooTamma-Regular, sans-serif;
     color: #fff;
@@ -2989,7 +2990,7 @@ form {
     -webkit-border-radius: 10px;
        -moz-border-radius: 10px;
             border-radius: 10px;
-    padding: 10px 20px;
+    padding: 5px 20px;
     letter-spacing: 1px;
     display: -webkit-box;
     display: -webkit-flex;
