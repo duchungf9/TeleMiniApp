@@ -674,9 +674,9 @@ form {
     -moz-background-size: 100%;
          background-size: 100%;
     padding: 6.6666666667vw 8vw 4vw;
-    height: -webkit-calc(100% - 36.5333333333vw);
-    height: -moz-calc(100% - 36.5333333333vw);
-    height: calc(100% - 36.5333333333vw);
+    height: -webkit-calc(100% - 25.8666666667vw);
+    height: -moz-calc(100% - 25.8666666667vw);
+    height: calc(100% - 25.8666666667vw);
   }
   .speed-page-section.miner-event, .speed-page-section.miner-rank {
     padding-left: 2.6666666667vw;
@@ -3151,6 +3151,9 @@ form {
     -moz-transition: 1s;
     transition: 1s;
     opacity: 0;
+    height: -webkit-calc(100% - 97px);
+    height: -moz-calc(100% - 97px);
+    height: calc(100% - 97px);
   }
   .modal-slide-up.slide-up {
     bottom: 0;
