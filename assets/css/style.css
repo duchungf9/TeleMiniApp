@@ -1504,7 +1504,7 @@ form {
   }
   .loot-section .upgrade-loot {
     position: absolute;
-    top: 114.4vw;
+    top: 111.7333333333vw;
     height: 19.7333333333vw;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1602,7 +1602,7 @@ form {
   }
   .loot-section .hack .notiffy-box {
     width: 71.4666666667vw;
-    margin: 2.6666666667vw auto 0;
+    margin: 0 auto;
     font-size: 4.8vw;
     font-family: BalooTamma-Regular, sans-serif;
     color: #fff;
@@ -1723,7 +1723,7 @@ form {
   }
   .notify-looted-section .notify-looted-content {
     position: absolute;
-    top: 90.1333333333vw;
+    top: 83.7333333333vw;
     -webkit-transform: translateX(-50%);
        -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -3105,7 +3105,7 @@ form {
   }
   .notify-looted-section .notify-looted-content {
     position: absolute;
-    top: 318px;
+    top: 314px;
     -webkit-transform: translateX(-50%);
        -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
