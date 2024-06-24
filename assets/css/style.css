@@ -479,6 +479,9 @@ form {
     font-size: 4.8vw;
     margin-bottom: 0;
   }
+  .account-info-section .icon-premieum {
+    width: 15px;
+  }
   .account-info-section .diamon-will-claim {
     margin-top: -1.3333333333vw;
     font-size: 4.8vw;
@@ -674,6 +677,7 @@ form {
     right: 4.5333333333vw;
   }
   .speed-page-section .speed-page-content {
+    z-index: 1;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -727,17 +731,17 @@ form {
        -moz-column-gap: 4.8vw;
             column-gap: 4.8vw;
     width: 63.7333333333vw;
-    height: 38.4vw;
+    height: 32vw;
   }
   .speed-page-section .speed-page-content .speed-current .chart-content .chart-item {
     background: url(../../assets/img/chart.svg) center top no-repeat;
     width: 18.1333333333vw;
-    height: 31.7333333333vw;
+    height: 28vw;
     -moz-background-size: 100%;
          background-size: 100%;
   }
   .speed-page-section .speed-page-content .speed-current .chart-content .chart-item.chart-item-ac {
-    height: 38.4vw;
+    height: 33.8666666667vw;
     background: url(../../assets/img/chart-ac.svg) center top no-repeat;
     -moz-background-size: 100%;
          background-size: 100%;
@@ -761,7 +765,7 @@ form {
     bottom: -4vw;
   }
   .speed-page-section .speed-page-content .upgrade-speed {
-    margin-top: 8vw;
+    margin-top: 5.3333333333vw;
   }
   .speed-page-section .speed-page-content .upgrade-speed .btn-upgrade {
     width: 48vw;
@@ -793,6 +797,10 @@ form {
   }
   .speed-page-section .speed-page-content .upgrade-speed .btn-upgrade .icon {
     width: 7.7333333333vw;
+  }
+  .speed-page-section .speed-page-content .upgrade-speed .btn-claimed {
+    display: block;
+    width: 100%;
   }
   .speed-page-section .speed-page-content .upgrade-speed .burn {
     color: #FFF;
@@ -862,36 +870,6 @@ form {
     vertical-align: middle;
     margin: 0 0.8vw;
   }
-  .speed-page-section .speed-page-content .bottom-group {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 4vw;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  .speed-page-section .speed-page-content .bottom-group a {
-    display: block;
-  }
-  .speed-page-section .speed-page-content .bottom-group .btn-copy, .speed-page-section .speed-page-content .bottom-group .btn-qrcode {
-    width: 13.3333333333vw;
-  }
-  .speed-page-section .speed-page-content .bottom-group .btn-invite {
-    width: 62.9333333333vw;
-  }
   .speed-page-section .speed-page-content .qrcode-block {
     padding: 25.3333333333vw 0 0 0;
   }
@@ -913,6 +891,40 @@ form {
   .speed-page-section .speed-page-content .qrcode-block .btn-gotit {
     position: absolute;
     bottom: 0;
+  }
+  .speed-page-section .bottom-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 4vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    padding: 2.6666666667vw;
+    background: #2f1d8b;
+  }
+  .speed-page-section .bottom-group a {
+    display: block;
+  }
+  .speed-page-section .bottom-group .btn-copy, .speed-page-section .bottom-group .btn-qrcode {
+    width: 13.3333333333vw;
+  }
+  .speed-page-section .bottom-group .btn-invite {
+    width: 62.9333333333vw;
   }
   .countdown-block {
     font-size: 6.4vw;
@@ -1481,7 +1493,7 @@ form {
   }
   .loot-section .upgrade-loot {
     position: absolute;
-    top: 119.4666666667vw;
+    top: 114.4vw;
     height: 19.7333333333vw;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1537,10 +1549,45 @@ form {
     pointer-events: none;
     width: 100%;
     left: 0;
-    top: 22.6666666667vw;
+    top: 19.4666666667vw;
   }
-  .loot-section .hack .img-hacker {
+  .loot-section .hack .hacker-img {
     width: 100%;
+    position: relative;
+  }
+  .loot-section .hack .hacker-img .txt-loot {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+       -moz-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    position: absolute;
+    bottom: -2.1333333333vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-family: Bungee-Regular, sans-serif;
+    -webkit-text-stroke-width: 0.5333333333vw;
+    -webkit-text-stroke-color: #000;
+  }
+  .loot-section .hack .hacker-img .txt-loot .loot {
+    color: #fff;
+    font-size: 6.4vw;
+    letter-spacing: -0.2666666667vw;
+  }
+  .loot-section .hack .hacker-img .txt-loot .num-79 {
+    color: #41F0FF;
+    margin-left: 1.3333333333vw;
+    font-size: 9.0666666667vw;
+    letter-spacing: -0.8vw;
   }
   .loot-section .hack .notiffy-box {
     width: 71.4666666667vw;
@@ -1711,13 +1758,28 @@ form {
     -moz-transition: 1s;
     transition: 1s;
     opacity: 0;
-    height: -webkit-calc(100% - 36.5333333333vw);
-    height: -moz-calc(100% - 36.5333333333vw);
-    height: calc(100% - 36.5333333333vw);
+    height: -webkit-calc(100% - 25.8666666667vw);
+    height: -moz-calc(100% - 25.8666666667vw);
+    height: calc(100% - 25.8666666667vw);
   }
   .modal-slide-up.slide-up {
     bottom: 0;
     opacity: 1;
+  }
+  .scroll-section {
+    margin-top: 5.3333333333vw;
+    height: -webkit-calc(100% - 60vw);
+    height: -moz-calc(100% - 60vw);
+    height: calc(100% - 60vw);
+    overflow: hidden;
+  }
+  .scroll-section .scroll-section-content {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .scroll-section .scroll-section-content > section:nth-child(1) {
+    margin-top: 0;
   }
 }
 @media (min-width: 768px) {
@@ -2037,17 +2099,17 @@ form {
        -moz-column-gap: 18px;
             column-gap: 18px;
     width: 239px;
-    height: 144px;
+    height: 120px;
   }
   .speed-page-section .speed-page-content .speed-current .chart-content .chart-item {
     background: url(../../assets/img/chart.svg) center top no-repeat;
     width: 68px;
-    height: 119px;
+    height: 105px;
     -moz-background-size: 100%;
          background-size: 100%;
   }
   .speed-page-section .speed-page-content .speed-current .chart-content .chart-item.chart-item-ac {
-    height: 144px;
+    height: 127px;
     background: url(../../assets/img/chart-ac.svg) center top no-repeat;
     -moz-background-size: 100%;
          background-size: 100%;
@@ -2071,7 +2133,7 @@ form {
     bottom: -15px;
   }
   .speed-page-section .speed-page-content .upgrade-speed {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .speed-page-section .speed-page-content .upgrade-speed .btn-upgrade {
     width: 180px;
@@ -2103,6 +2165,10 @@ form {
   }
   .speed-page-section .speed-page-content .upgrade-speed .btn-upgrade .icon {
     width: 29px;
+  }
+  .speed-page-section .speed-page-content .upgrade-speed .btn-claimed {
+    display: block;
+    width: 100%;
   }
   .speed-page-section .speed-page-content .upgrade-speed .btn-ok {
     margin-top: 8px;
@@ -2172,33 +2238,6 @@ form {
     vertical-align: middle;
     margin: 0 3px;
   }
-  .speed-page-section .speed-page-content .bottom-group {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 15px;
-  }
-  .speed-page-section .speed-page-content .bottom-group a {
-    display: block;
-  }
-  .speed-page-section .speed-page-content .bottom-group .btn-copy, .speed-page-section .speed-page-content .bottom-group .btn-qrcode {
-    width: 50px;
-  }
-  .speed-page-section .speed-page-content .bottom-group .btn-invite {
-    width: 236px;
-  }
   .speed-page-section .speed-page-content .qrcode-block {
     padding: 95px 0 0 0;
   }
@@ -2220,6 +2259,40 @@ form {
   .speed-page-section .speed-page-content .qrcode-block .btn-gotit {
     position: absolute;
     bottom: 0;
+  }
+  .speed-page-section .bottom-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    padding: 10px;
+    background: #2f1d8b;
+  }
+  .speed-page-section .bottom-group a {
+    display: block;
+  }
+  .speed-page-section .bottom-group .btn-copy, .speed-page-section .bottom-group .btn-qrcode {
+    width: 50px;
+  }
+  .speed-page-section .bottom-group .btn-invite {
+    width: 236px;
   }
   .countdown-block {
     font-size: 24px;
@@ -2843,11 +2916,46 @@ form {
     position: absolute;
     pointer-events: none;
     left: 0;
-    top: 75px;
+    top: 73px;
     width: 100%;
   }
-  .loot-section .hack .img-hacker {
+  .loot-section .hack .hacker-img {
     width: 100%;
+    position: relative;
+  }
+  .loot-section .hack .hacker-img .txt-loot {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+       -moz-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-family: Bungee-Regular, sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+  }
+  .loot-section .hack .hacker-img .txt-loot .loot {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+  .loot-section .hack .hacker-img .txt-loot .num-79 {
+    color: #41F0FF;
+    margin-left: 5px;
+    font-size: 34px;
+    letter-spacing: 3px;
   }
   .loot-section .hack .notiffy-box {
     width: 268px;
