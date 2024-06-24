@@ -478,9 +478,20 @@ form {
   .account-info-section h2 {
     font-size: 4.8vw;
     margin-bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .account-info-section .icon-premieum {
-    width: 15px;
+    width: 5.3333333333vw;
+    margin-left: 1.3333333333vw;
   }
   .account-info-section .diamon-will-claim {
     margin-top: -1.3333333333vw;
@@ -1902,6 +1913,20 @@ form {
   .account-info-section h2 {
     font-size: 18px;
     margin-bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .account-info-section .icon-premieum {
+    width: 20px;
+    margin-left: 5px;
   }
   .account-info-section .diamon-will-claim {
     margin-top: -5px;
