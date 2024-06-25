@@ -925,7 +925,7 @@ form {
     width: 100%;
     z-index: 2;
     left: 0;
-    padding: 2.6666666667vw;
+    padding: 2.6666666667vw 2.6666666667vw 8vw;
     background: #2f1d8b;
   }
   .speed-page-section .bottom-group a {
@@ -1382,7 +1382,7 @@ form {
     opacity: 0;
   }
   .popupNotify.showPopup {
-    bottom: 13.3333333333vw;
+    bottom: 21.3333333333vw;
     opacity: 1;
   }
   .help-section {
@@ -2307,7 +2307,7 @@ form {
     width: 100%;
     z-index: 2;
     left: 0;
-    padding: 10px;
+    padding: 10px 10px 30px;
     background: #2f1d8b;
   }
   .speed-page-section .bottom-group a {
@@ -2764,7 +2764,7 @@ form {
     opacity: 0;
   }
   .popupNotify.showPopup {
-    bottom: 50px;
+    bottom: 80px;
     opacity: 1;
   }
   .help-section {
