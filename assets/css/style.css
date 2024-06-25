@@ -636,7 +636,7 @@ form {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .main-menu-section a {
+  .main-menu-section a, .main-menu-section button {
     display: block;
     width: 16vw;
     height: 17.6vw;
@@ -647,7 +647,7 @@ form {
     -moz-transition: 0.3s;
     transition: 0.3s;
   }
-  .main-menu-section a.is-active img {
+  .main-menu-section a.is-active img, .main-menu-section button.is-active img {
     opacity: 0;
   }
   .main-menu-section .btn-boost {
@@ -931,7 +931,7 @@ form {
     padding: 2.6666666667vw 2.6666666667vw 8vw;
     background: #2f1d8b;
   }
-  .speed-page-section .bottom-group a {
+  .speed-page-section .bottom-group a, .speed-page-section .bottom-group button {
     display: block;
   }
   .speed-page-section .bottom-group .btn-copy, .speed-page-section .bottom-group .btn-qrcode {
@@ -1096,7 +1096,7 @@ form {
   .miner-section .btn-group {
     margin-top: 4.2666666667vw;
   }
-  .miner-section .btn-group a {
+  .miner-section .btn-group a, .miner-section .btn-group button {
     display: block;
     width: 14.4vw;
     margin-bottom: 2.6666666667vw;
@@ -1112,7 +1112,7 @@ form {
   .miner-section .claimed-block {
     margin-top: 4vw;
   }
-  .miner-section .claimed-block a {
+  .miner-section .claimed-block button, .miner-section .claimed-block a {
     display: block;
     width: 67.2vw;
     margin: auto;
@@ -1190,7 +1190,7 @@ form {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .tab-panel a {
+  .tab-panel a, .tab-panel button {
     -webkit-border-radius: 2.1333333333vw;
        -moz-border-radius: 2.1333333333vw;
             border-radius: 2.1333333333vw;
@@ -1202,7 +1202,7 @@ form {
     -moz-background-size: 100% !important;
          background-size: 100% !important;
   }
-  .tab-panel a.is-active img {
+  .tab-panel a.is-active img, .tab-panel button.is-active img {
     opacity: 0;
   }
   .tab-panel .btn-friend {
@@ -1264,7 +1264,7 @@ form {
   .miner-event .tab-panel {
     gap: 4.2666666667vw;
   }
-  .miner-event .tab-panel a {
+  .miner-event .tab-panel a, .miner-event .tab-panel button {
     width: 29.8666666667vw;
   }
   .miner-event .gdm-bar-item .item-right {
@@ -1879,7 +1879,7 @@ form {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .main-menu-section a {
+  .main-menu-section a, .main-menu-section button {
     display: block;
     width: 66px;
     height: 72px;
@@ -1890,7 +1890,7 @@ form {
     -moz-transition: 0.3s;
     transition: 0.3s;
   }
-  .main-menu-section a.is-active img {
+  .main-menu-section a.is-active img, .main-menu-section button.is-active img {
     opacity: 0;
   }
   .main-menu-section .btn-boost {
@@ -2316,7 +2316,7 @@ form {
     padding: 10px 10px 30px;
     background: #2f1d8b;
   }
-  .speed-page-section .bottom-group a {
+  .speed-page-section .bottom-group a, .speed-page-section .bottom-group button {
     display: block;
   }
   .speed-page-section .bottom-group .btn-copy, .speed-page-section .bottom-group .btn-qrcode {
@@ -2481,7 +2481,7 @@ form {
   .miner-section .btn-group {
     margin-top: 16px;
   }
-  .miner-section .btn-group a {
+  .miner-section .btn-group a, .miner-section .btn-group button {
     display: block;
     width: 54px;
     margin-bottom: 10px;
@@ -2497,7 +2497,7 @@ form {
   .miner-section .claimed-block {
     margin-top: 6px;
   }
-  .miner-section .claimed-block a {
+  .miner-section .claimed-block button, .miner-section .claimed-block a {
     display: block;
     width: 240px;
     margin: auto;
@@ -2575,7 +2575,7 @@ form {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .tab-panel a {
+  .tab-panel a, .tab-panel button {
     display: block;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -2587,7 +2587,7 @@ form {
        -moz-border-radius: 8px;
             border-radius: 8px;
   }
-  .tab-panel a.is-active img {
+  .tab-panel a.is-active img, .tab-panel button.is-active img {
     opacity: 0;
   }
   .tab-panel .btn-friend {
@@ -2649,7 +2649,7 @@ form {
   .miner-event .tab-panel {
     gap: 16px;
   }
-  .miner-event .tab-panel a {
+  .miner-event .tab-panel a, .miner-event .tab-panel button {
     width: 112px;
   }
   .miner-event .gdm-bar-item .item-right {
