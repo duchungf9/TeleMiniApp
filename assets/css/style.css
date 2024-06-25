@@ -1133,7 +1133,7 @@ form {
   }
   .miner-section .claimed-block button, .miner-section .claimed-block a {
     display: block;
-    width: 67.2vw;
+    width: 61.3333333333vw;
     margin: auto;
   }
   .gdm-bar .gdm-bar-item {
@@ -2538,7 +2538,7 @@ form {
   }
   .miner-section .claimed-block button, .miner-section .claimed-block a {
     display: block;
-    width: 240px;
+    width: 230px;
     margin: auto;
   }
   .gdm-bar .gdm-bar-item {
