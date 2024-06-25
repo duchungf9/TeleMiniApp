@@ -682,6 +682,9 @@ form {
     padding-left: 2.6666666667vw;
     padding-right: 2.6666666667vw;
   }
+  .speed-page-section.miner-rank {
+    padding-bottom: 16vw;
+  }
   .speed-page-section .btn-close {
     position: absolute;
     top: -4.5333333333vw;
@@ -2064,6 +2067,9 @@ form {
   .speed-page-section.miner-event, .speed-page-section.miner-rank {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .speed-page-section.miner-rank {
+    padding-bottom: 60px;
   }
   .speed-page-section .btn-close {
     position: absolute;
