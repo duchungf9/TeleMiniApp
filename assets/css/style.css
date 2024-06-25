@@ -931,6 +931,21 @@ form {
     padding: 2.6666666667vw 2.6666666667vw 8vw;
     background: #2f1d8b;
   }
+  .speed-page-section .bottom-group.upgrade-speed {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+  }
   .speed-page-section .bottom-group a, .speed-page-section .bottom-group button {
     display: block;
   }
@@ -1053,6 +1068,10 @@ form {
     width: auto;
     height: 100%;
     margin: auto;
+    -webkit-animation: upAndDown 3s linear infinite;
+       -moz-animation: upAndDown 3s linear infinite;
+         -o-animation: upAndDown 3s linear infinite;
+            animation: upAndDown 3s linear infinite;
   }
   .miner-section .miner-info-item {
     width: 77.3333333333vw;
@@ -1173,6 +1192,7 @@ form {
   }
   .gdm-bar.is-claimed {
     margin-top: 8vw;
+    padding-bottom: 42.6666666667vw;
   }
   .gdm-bar.is-claimed .gdm-bar-item {
     -webkit-filter: brightness(0.6) contrast(0.6);
@@ -2316,6 +2336,21 @@ form {
     padding: 10px 10px 30px;
     background: #2f1d8b;
   }
+  .speed-page-section .bottom-group.upgrade-speed {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+  }
   .speed-page-section .bottom-group a, .speed-page-section .bottom-group button {
     display: block;
   }
@@ -2438,6 +2473,10 @@ form {
     width: auto;
     height: 100%;
     margin: auto;
+    -webkit-animation: upAndDown 3s linear infinite;
+       -moz-animation: upAndDown 3s linear infinite;
+         -o-animation: upAndDown 3s linear infinite;
+            animation: upAndDown 3s linear infinite;
   }
   .miner-section .miner-info-item {
     display: -webkit-box;
@@ -2558,6 +2597,7 @@ form {
   }
   .gdm-bar.is-claimed {
     margin-top: 26px;
+    padding-bottom: 160px;
   }
   .gdm-bar.is-claimed .gdm-bar-item {
     -webkit-filter: brightness(0.6) contrast(0.6);
@@ -3340,5 +3380,49 @@ form {
        -moz-transform: translateX(-375px);
          -o-transform: translateX(-375px);
             transform: translateX(-375px);
+  }
+}
+@-webkit-keyframes upAndDown {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+@-moz-keyframes upAndDown {
+  0%, 100% {
+    -moz-transform: translateY(0);
+         transform: translateY(0);
+  }
+  50% {
+    -moz-transform: translateY(10px);
+         transform: translateY(10px);
+  }
+}
+@-o-keyframes upAndDown {
+  0%, 100% {
+    -o-transform: translateY(0);
+       transform: translateY(0);
+  }
+  50% {
+    -o-transform: translateY(10px);
+       transform: translateY(10px);
+  }
+}
+@keyframes upAndDown {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+       -moz-transform: translateY(10px);
+         -o-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
