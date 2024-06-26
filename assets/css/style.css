@@ -1866,7 +1866,7 @@ screen {
   }
   .wrapper {
     width: 375px;
-    height: 590px;
+    height: 100%;
     margin: auto;
     overflow: hidden;
     background: #1d0a55;
