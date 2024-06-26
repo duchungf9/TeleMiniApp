@@ -125,8 +125,6 @@
 
 body, html {
   scroll-behavior: scroll-behavior;
-  height: 100vh;
-  overflow: hidden;
   scrollbar-width: 0px;
 }
 body::-webkit-scrollbar, html::-webkit-scrollbar {
@@ -307,6 +305,7 @@ dd {
 /* Set core body defaults */
 body {
   min-height: 100vh;
+  overflow: hidden;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
