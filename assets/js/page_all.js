@@ -6,7 +6,27 @@
  * @version 
  * Copyright 2024. MIT licensed.
  */$(document).ready(function () {
-  // Chuyển đồi tab ở trang Rank và Event
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera; // Check if the device is an iPad
+
+  function isiPad() {
+    return /iPad|Macintosh/.test(userAgent) && 'ontouchend' in document;
+  } // Check if the device is running macOS
+
+
+  function isMacOS() {
+    return /Macintosh/.test(userAgent) && !('ontouchend' in document);
+  } // Example usage
+
+
+  if (isiPad()) {
+    $('.app').addClass('isScaled');
+  } else if (isMacOS()) {
+    $('.app').addClass('isScaled');
+  } else {
+    console.log("The device is neither an iPad nor running macOS.");
+  } // Chuyển đồi tab ở trang Rank và Event
+
+
   $('.tab-panel a').click(function () {
     var tabPanel = $(this).data('panel');
     var parent = $(this).data('modal');
