@@ -5,16 +5,17 @@
  * @author Thuclfc
  * @version 
  * Copyright 2024. MIT licensed.
- */$(document).ready(function () {
-  
-  Telegram.WebApp.expand()
-  window.addEventListener("touchmove", function(e) {
-      if (!e.target.closest('.scroll-section-content')) {
-        e.preventDefault();
-      }
-    }, { passive: false });
-  Telegram.WebApp.ready();
-
+ */Telegram.WebApp.expand();
+window.addEventListener("touchmove", function (e) {
+  if (!e.target.closest('.scroll-section-content')) {
+    e.preventDefault();
+  }
+}, {
+  passive: false
+});
+Telegram.WebApp.ready();
+$(document).ready(function () {
+  // Check 
   var userAgent = navigator.userAgent || navigator.vendor || window.opera; // Check if the device is an iPad
 
   function isiPad() {
