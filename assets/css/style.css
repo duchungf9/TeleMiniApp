@@ -414,6 +414,14 @@ form {
   margin-top: 0em;
 }
 
+:root {
+  --tg-viewport-height: 100vh;
+}
+
+screen {
+  height: var(--tg-viewport-height);
+}
+
 @media (min-width: 320px) and (max-width: 767.98px) {
   .fz18 {
     font-size: 4.8vw !important;
