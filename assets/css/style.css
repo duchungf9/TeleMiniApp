@@ -483,6 +483,13 @@ screen > div {
     width: 100%;
     height: 100%;
   }
+  .app.isScaled .sreen-boost, .app.isScaled .screen-offer, .app.isScaled .screen-loot, .app.isScaled .screen-miner {
+    -webkit-transform: scale(0.85) translateY(-10.6666666667vw);
+       -moz-transform: scale(0.85) translateY(-10.6666666667vw);
+        -ms-transform: scale(0.85) translateY(-10.6666666667vw);
+         -o-transform: scale(0.85) translateY(-10.6666666667vw);
+            transform: scale(0.85) translateY(-10.6666666667vw);
+  }
   .app.isScaled .notify-looted-section {
     -webkit-transform: scale(0.9) translateX(-55%) translateY(-10.1333333333vw);
        -moz-transform: scale(0.9) translateX(-55%) translateY(-10.1333333333vw);
@@ -1217,7 +1224,6 @@ screen > div {
   }
   .gdm-bar.is-claimed {
     margin-top: 8vw;
-    padding-bottom: 42.6666666667vw;
   }
   .gdm-bar.is-claimed .gdm-bar-item {
     -webkit-filter: brightness(0.6) contrast(0.6);
@@ -1821,9 +1827,15 @@ screen > div {
     height: -moz-calc(100% - 25.8666666667vw);
     height: calc(100% - 25.8666666667vw);
   }
+  .modal-slide-up.modalOfferJoin .speed-page-content {
+    padding-bottom: 37.3333333333vw;
+  }
   .modal-slide-up.slide-up {
     bottom: 0;
     opacity: 1;
+  }
+  .modal-slide-up .btn-upgrade {
+    margin-top: 0 !important;
   }
   .scroll-section {
     margin-top: 5.3333333333vw;
@@ -1906,6 +1918,13 @@ screen > div {
   }
   .app::-webkit-scrollbar {
     width: 0px;
+  }
+  .app.isScaled .screen-boost-contain, .app.isScaled .screen-offer-contain, .app.isScaled .screen-loots-contain, .app.isScaled .screen-miner-contain {
+    -webkit-transform: scale(0.9) translateY(-40px);
+       -moz-transform: scale(0.9) translateY(-40px);
+        -ms-transform: scale(0.9) translateY(-40px);
+         -o-transform: scale(0.9) translateY(-40px);
+            transform: scale(0.9) translateY(-40px);
   }
   .app.isScaled .notify-looted-section {
     -webkit-transform: scale(0.9) translateX(-55%) translateY(-38px);
@@ -2637,7 +2656,6 @@ screen > div {
   }
   .gdm-bar.is-claimed {
     margin-top: 26px;
-    padding-bottom: 160px;
   }
   .gdm-bar.is-claimed .gdm-bar-item {
     -webkit-filter: brightness(0.6) contrast(0.6);
@@ -3241,9 +3259,15 @@ screen > div {
     height: -moz-calc(100% - 97px);
     height: calc(100% - 97px);
   }
+  .modal-slide-up.modalOfferJoin .speed-page-content {
+    padding-bottom: 140px;
+  }
   .modal-slide-up.slide-up {
     bottom: 0;
     opacity: 1;
+  }
+  .modal-slide-up .btn-upgrade {
+    margin-top: 0 !important;
   }
   .scroll-section {
     margin-top: 20px;
