@@ -102,15 +102,23 @@ function showPopup(msg) {
 function showNotifyLooted(msg) {
   $('.notify-looted-section').addClass('show-notify-looted');
   $('.notify-looted-section .num').html(msg);
+  // When opening the popup
+  document.body.classList.add('fixed');
+
+// When closing the popup
+
   setTimeout(function () {
     $('.notify-looted-section').removeClass('show-notify-looted');
+    document.body.classList.remove('fixed');
   }, 3000);
 }
 
 function showModalSlideUp(modalName) {
   $(modalName).addClass('slide-up');
+  document.body.classList.add('fixed');
   var btnClose = $(modalName).find('.btn-close');
   $(btnClose).click(function () {
     $(modalName).removeClass('slide-up');
+    document.body.classList.remove('fixed');
   });
 }
