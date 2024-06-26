@@ -124,7 +124,6 @@
 }
 
 body, html {
-  scroll-behavior: scroll-behavior;
   scrollbar-width: 0px;
 }
 body::-webkit-scrollbar, html::-webkit-scrollbar {
@@ -303,7 +302,7 @@ dd {
 }
 
 /* Set core body defaults */
-body {
+body, html {
   height: 100vh;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -1916,7 +1915,7 @@ screen > div {
     height: 100%;
     overflow: hidden;
     overflow-y: scroll;
-    scroll-width: 0px;
+    scrollbar-width: 0px;
   }
   .app::-webkit-scrollbar {
     width: 0px;
