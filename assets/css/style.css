@@ -483,7 +483,7 @@ screen > div {
     width: 100%;
     height: 100%;
   }
-  .app.isScaled .sreen-boost, .app.isScaled .screen-offer, .app.isScaled .screen-loot, .app.isScaled .screen-miner {
+  .app.isScaled .screen-boost-contain, .app.isScaled .screen-offer-contain, .app.isScaled .screen-loots-contain, .app.isScaled .screen-miner-contain {
     -webkit-transform: scale(0.85) translateY(-10.6666666667vw);
        -moz-transform: scale(0.85) translateY(-10.6666666667vw);
         -ms-transform: scale(0.85) translateY(-10.6666666667vw);
@@ -499,6 +499,11 @@ screen > div {
   }
   .app.isScaled .bottom-group {
     padding-bottom: 2.6666666667vw !important;
+  }
+  .app.isScaled .screen-offer-contain .scroll-section {
+    height: -webkit-calc(100% - 50.6666666667vw);
+    height: -moz-calc(100% - 50.6666666667vw);
+    height: calc(100% - 50.6666666667vw);
   }
   .account-info-section {
     text-align: center;
@@ -1827,8 +1832,8 @@ screen > div {
     height: -moz-calc(100% - 25.8666666667vw);
     height: calc(100% - 25.8666666667vw);
   }
-  .modal-slide-up.modalOfferJoin .speed-page-content {
-    padding-bottom: 37.3333333333vw;
+  .modal-slide-up.modalOfferJoin {
+    padding-bottom: 37.8666666667vw;
   }
   .modal-slide-up.slide-up {
     bottom: 0;
@@ -1899,6 +1904,7 @@ screen > div {
   }
   .wrapper {
     width: 375px;
+    height: 558px;
     margin: auto;
     overflow: hidden;
     background: #2a1a7d;
@@ -1935,6 +1941,11 @@ screen > div {
   }
   .app.isScaled .bottom-group {
     padding-bottom: 10px !important;
+  }
+  .app.isScaled .screen-offer-contain .scroll-section {
+    height: -webkit-calc(100% - 190px);
+    height: -moz-calc(100% - 190px);
+    height: calc(100% - 190px);
   }
   .main-menu-section {
     position: -webkit-sticky;
@@ -2142,7 +2153,9 @@ screen > div {
     -moz-background-size: 100%;
          background-size: 100%;
     padding: 25px 30px 15px;
-    height: 508px;
+    height: -webkit-calc(100% - 97px);
+    height: -moz-calc(100% - 97px);
+    height: calc(100% - 97px);
   }
   .speed-page-section.miner-event, .speed-page-section.miner-rank {
     padding-left: 10px;
@@ -3259,8 +3272,8 @@ screen > div {
     height: -moz-calc(100% - 97px);
     height: calc(100% - 97px);
   }
-  .modal-slide-up.modalOfferJoin .speed-page-content {
-    padding-bottom: 140px;
+  .modal-slide-up.modalOfferJoin {
+    padding-bottom: 142px;
   }
   .modal-slide-up.slide-up {
     bottom: 0;
