@@ -20,7 +20,7 @@
   }, {
     passive: false
   });
-  window.scrollTo(0, 100);
+  // window.scrollTo(0, 100);
   Telegram.WebApp.ready(); // Check 
 
   var userAgent = navigator.userAgent || navigator.vendor || window.opera; // Check if the device is an iPad
