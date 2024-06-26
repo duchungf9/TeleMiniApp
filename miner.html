@@ -1,606 +1,624 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="content-language" content="vi"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title data-react-helmet="true">Miner</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="vi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <title data-react-helmet="true">Miner</title>
 
-    </head>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-    <body>
+</head>
+
+<body>
     <div class="wrapper pr">
-        
-<img src="assets/img/bg-page.svg" alt="" class="imgFull pr bg-page">
-<div class="bg-float">
-    <img src="assets/img/bg-float.svg" alt="" class="imgFull pr">
-</div>
-<main class="app">
-    <screen class="screen-miner">
-        <div class="screen-miner-contain">
-            <section class="account-info-section">
-                <h2 class="balooTammaExtraBold">Meimei89 <div class="icon-premieum"><img src="assets/img/icon-premium.png" alt="" class="imgFull"></div></h1>
-                <div class="diamon-will-claim">
-                    <span class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></span>
-                    <span class="num bungeeRegular">0000.010250</span>
-                </div>
-                <div class="last-claim">
-                    <p class="balooTammaRegular">Last claimed: <span class="num">0.025</span> GDM</p>
-                </div>
-            </section>
-            <section class="miner-section">
-                <div class="miner-section-content">
-                    <div class="btn-left-group btn-group">
-                        <a href="javascript:void(0)" class="btn-event" onclick="showModalSlideUp('.modalMinerEvent')">
-                            <img src="assets/img/btn-event.png" alt="" class="imgFull">
-                        </a>
-                        <a href="miner-loot.html" class="btn-loot">
-                            <img src="assets/img/btn-loot.png" alt="" class="imgFull">
-                        </a>
-                    </div>
-                    <div class="miner-info">
-                        <div class="miner-info-top">
-                            <div class="text balooTammuduBold">MINNER</div>
-                            <div class="num bungeeRegular" data-number="0.000238">0.000238</div>
-                        </div>
-                        <div class="miner-img">
-                            <img src="assets/img/img-demo-3.png" alt="" class="imgFull">
-                        </div>
-                        <div class="miner-info-item">
-                            <div class="miner-item bg-bdrs-black"><p>SPEED PER HOUR:</p> <span class="color-blue bungeeRegular num">0.025</span><span class="color-purple">/HOUR</span></div>
-                            <div class="miner-item bg-bdrs-black"><p>STORAGE:</p> <span class="color-blue bungeeRegular num">0.05</span><span class="color-purple">/TIME</span></div>
-                        </div>
-                    </div>
-                    <div class="btn-right-group btn-group">
-                        <a href="javascript:void(0)" class="btn-daily" onclick="showModalSlideUp('.modalMinerDaily')">
-                            <img src="assets/img/btn-daily.png" alt="" class="imgFull">
-                        </a>
-                        <a href="javascript:void(0)" class="btn-rank" onclick="showModalSlideUp('.modalMinerRank')">
-                            <img src="assets/img/btn-rank.png" alt="" class="imgFull">
-                        </a>
-                    </div>
-                </div>
-                <div class="countdown-block" style="display: none;">
-                    <div class="icon">
-                        <img src="assets/img/icon-clock.svg" alt="" class="imgFull">
-                    </div>
-                    <div class="timer bg-black">
-                        <div class="hour bungeeRegular color-purple">00</div>
-                        <span class="dot bungeeRegular color-purple">:</span>
-                        <div class="minute bungeeRegular color-purple">00</div>
-                        <span class="dot bungeeRegular color-purple">:</span>
-                        <div class="second bungeeRegular color-purple">04</div>
-                    </div>
-                </div>
-                <div class="claimed-block">
-                    <button class="btn-claimed"><img src="assets/img/btn-claim.png" alt="" class="imgFull"></button>
-                </div>
-            </section>
+
+        <img src="assets/img/bg-page.svg" alt="" class="imgFull pr bg-page">
+        <div class="bg-float">
+            <img src="assets/img/bg-float.svg" alt="" class="imgFull pr">
         </div>
-    </screen>
-</main>
-<section class="speed-page-section miner-event modal-slide-up modalMinerRank">
-    <a href="javascript:void(0)" class="btn-close">
-        <img src="assets/img/btn-x.png" alt="" class="imgFull">
-    </a>
-    <div class="speed-page-content">
-        <div class="tab-panel">
-            <a href="javascript:void(0)" class="btn-area is-active" data-panel="#panel-1" data-modal=".modalMinerRank">
-                <img src="assets/img/btn-area.png" alt="" class="imgFull">
+        <main class="app">
+            <screen class="screen-miner">
+                <div class="screen-miner-contain">
+                    <section class="account-info-section">
+                        <h2 class="balooTammaExtraBold">Meimei89 <div class="icon-premieum"><img
+                                    src="assets/img/icon-premium.png" alt="" class="imgFull"></div>
+                            </h1>
+                            <div class="diamon-will-claim">
+                                <span class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></span>
+                                <span class="num bungeeRegular">0000.010250</span>
+                            </div>
+                            <div class="last-claim">
+                                <p class="balooTammaRegular">Last claimed: <span class="num">0.025</span> GDM</p>
+                            </div>
+                    </section>
+                    <section class="miner-section">
+                        <div class="miner-section-content">
+                            <div class="btn-left-group btn-group">
+                                <a href="javascript:void(0)" class="btn-event"
+                                    onclick="showModalSlideUp('.modalMinerEvent')">
+                                    <img src="assets/img/btn-event.png" alt="" class="imgFull">
+                                </a>
+                                <a href="miner-loot.html" class="btn-loot">
+                                    <img src="assets/img/btn-loot.png" alt="" class="imgFull">
+                                </a>
+                            </div>
+                            <div class="miner-info">
+                                <div class="miner-info-top">
+                                    <div class="text balooTammuduBold">MINNER</div>
+                                    <div class="num bungeeRegular" data-number="0.000238">0.000238</div>
+                                </div>
+                                <div class="miner-img">
+                                    <img src="assets/img/img-demo-3.png" alt="" class="imgFull">
+                                </div>
+                                <div class="miner-info-item">
+                                    <div class="miner-item bg-bdrs-black">
+                                        <p>SPEED PER HOUR:</p> <span
+                                            class="color-blue bungeeRegular num">0.025</span><span
+                                            class="color-purple">/HOUR</span>
+                                    </div>
+                                    <div class="miner-item bg-bdrs-black">
+                                        <p>STORAGE:</p> <span class="color-blue bungeeRegular num">0.05</span><span
+                                            class="color-purple">/TIME</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-right-group btn-group">
+                                <a href="javascript:void(0)" class="btn-daily"
+                                    onclick="showModalSlideUp('.modalMinerDaily')">
+                                    <img src="assets/img/btn-daily.png" alt="" class="imgFull">
+                                </a>
+                                <a href="javascript:void(0)" class="btn-rank"
+                                    onclick="showModalSlideUp('.modalMinerRank')">
+                                    <img src="assets/img/btn-rank.png" alt="" class="imgFull">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="countdown-block" style="display: none;">
+                            <div class="icon">
+                                <img src="assets/img/icon-clock.svg" alt="" class="imgFull">
+                            </div>
+                            <div class="timer bg-black">
+                                <div class="hour bungeeRegular color-purple">00</div>
+                                <span class="dot bungeeRegular color-purple">:</span>
+                                <div class="minute bungeeRegular color-purple">00</div>
+                                <span class="dot bungeeRegular color-purple">:</span>
+                                <div class="second bungeeRegular color-purple">04</div>
+                            </div>
+                        </div>
+                        <div class="claimed-block">
+                            <button class="btn-claimed"><img src="assets/img/btn-claim.png" alt=""
+                                    class="imgFull"></button>
+                        </div>
+                    </section>
+                </div>
+            </screen>
+        </main>
+        <section class="speed-page-section miner-event modal-slide-up modalMinerRank">
+            <a href="javascript:void(0)" class="btn-close">
+                <img src="assets/img/btn-x.png" alt="" class="imgFull">
             </a>
-            <a href="javascript:void(0)" class="btn-global" data-panel="#panel-2" data-modal=".modalMinerRank">
-                <img src="assets/img/btn-global.png" alt="" class="imgFull">
-            </a>
-            <a href="javascript:void(0)" class="btn-friend" data-panel="#panel-3" data-modal=".modalMinerRank">
-                <img src="assets/img/btn-friend.png" alt="" class="imgFull">
-            </a>
-        </div>
-        <div id="panel-1" class="tab-content is-active">
-            <div class="title-top">
-                <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
-                <div class="right">
-                    <h2 class="balooTammaExtraBold title-head">YOUR ZONE: 0007</h2>
-                    <div class="text">Your ranking: 100/ 25.540 people</div>
+            <div class="speed-page-content">
+                <div class="tab-panel">
+                    <a href="javascript:void(0)" class="btn-area is-active" data-panel="#panel-1"
+                        data-modal=".modalMinerRank">
+                        <img src="assets/img/btn-area.png" alt="" class="imgFull">
+                    </a>
+                    <a href="javascript:void(0)" class="btn-global" data-panel="#panel-2" data-modal=".modalMinerRank">
+                        <img src="assets/img/btn-global.png" alt="" class="imgFull">
+                    </a>
+                    <a href="javascript:void(0)" class="btn-friend" data-panel="#panel-3" data-modal=".modalMinerRank">
+                        <img src="assets/img/btn-friend.png" alt="" class="imgFull">
+                    </a>
                 </div>
-            </div>
-            <div class="gdm-bar">
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-            </div>
-            <div class="title-top">
-                <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
-                <div class="right">
-                    <h2 class="balooTammaExtraBold title-head">TOP 3 EARN</h2>
-                    <div class="text">Lastest 24 hours results.</div>
-                </div>
-            </div>
-            <div class="gdm-bar">
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="panel-2" class="tab-content">
-            <div class="title-top">
-                <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
-                <div class="right">
-                    <h2 class="balooTammaExtraBold title-head">TOP GLOBAL GDM</h2>
-                    <div class="text">Your ranking: 100.000</div>
-                </div>
-            </div>
-            <div class="gdm-bar">
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-            </div>
-            <div class="title-top">
-                <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
-                <div class="right">
-                    <h2 class="balooTammaExtraBold title-head">TOP 3 EARN</h2>
-                    <div class="text">Lastest 24 hours results.</div>
-                </div>
-            </div>
-            <div class="gdm-bar">
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                        <div class="text">0010.252550</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="panel-3" class="tab-content">
-            <div class="title-top">
-                <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
-                <div class="right">
-                    <h2 class="balooTammaExtraBold title-head">TOP GLOBAL FRIENDS</h2>
-                    <div class="text">Your ranking: 100.000</div>
-                </div>
-            </div>
-            <div class="gdm-bar">
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="text">3400 friends</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_02</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="text">3400 friends</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_03</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="text">3400 friends</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_04</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="text">3400 friends</div>
-                    </div>
-                </div>
-            </div>
-            <div class="title-top">
-                <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
-                <div class="right">
-                    <h2 class="balooTammaExtraBold title-head">TOP 3 NEW FRIENDS</h2>
-                    <div class="text">Lastest 24 hours results.</div>
-                </div>
-            </div>
-            <div class="gdm-bar">
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_01</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="text">+334</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_02</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="text">+234</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_03</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="text">+190</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="speed-page-section miner-daily-section modal-slide-up modalMinerDaily">
-    <a href="javascript:void(0)" class="btn-close">
-        <img src="assets/img/btn-x.png" alt="" class="imgFull">
-    </a>
-    <div class="speed-page-content">
-        <div class="speed-need-upgrade">
-            <div class="speed-upgrade-item future-level btn-fullwidth bg-gradient">
-                <div class="speed-upgrade-item-contain bg-purple">
-                    <div class="bungeeRegular">DAY 2</div>
-                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                    <div class="bungeeRegular">0.030250</div>
-                </div>
-            </div>
-            <div class="speed-upgrade-item next-level btn-fullwidth bg-gradient">
-                <div class="speed-upgrade-item-contain bg-black">
-                    <div class="bungeeRegular">DAY 1</div>
-                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                    <div class="bungeeRegular">0.020250</div>
-                </div>
-            </div>
-        </div>
-        <div class="speed-current">
-            <div class="chart">
-                <div class="chart-content">
-                    <div class="chart-item"></div>
-                    <div class="chart-item chart-item-ac"></div>
-                    <div class="chart-item"></div>
-                </div>
-            </div>
-            <div class="speed-current-claimed btn-fullwidth bg-gradient">
-                <div class="speed-current-claimed-contain bg-blue pr">
-                    <div class="bungeeRegular">DAY 0</div>
-                    <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
-                    <div class="bungeeRegular">0.010250</div>
-                    <a href="#" class="btn-claimed"><img src="assets/img/btn-claimed-2.png" alt="" class="imgFull"></a>
-                </div>
-            </div>
-        </div>
-        <div class="upgrade-speed">
-            <div class="burn balooTammuduBold">FREE WELLCOME GIFT</div>
-            <!-- Khi Claimed thì sẽ ẩn html này đi -->
-            <p class="text balooTammaRegular color-gray">YOU WILL RECEIVE GIFTS EVERY 24 HOURS</p>
-            <div class="countdown-block">
-                <div class="icon">
-                    <img src="assets/img/icon-clock.svg" alt="" class="imgFull">
-                </div>
-                <div class="timer bg-black">
-                    <div class="hour bungeeRegular color-purple">00</div>
-                    <span class="dot bungeeRegular color-purple">:</span>
-                    <div class="minute bungeeRegular color-purple">00</div>
-                    <span class="dot bungeeRegular color-purple">:</span>
-                    <div class="second bungeeRegular color-purple">04</div>
-                </div>
-            </div>
-            <!-- --------------------- và cho hiện thẻ div ở bên dưới lên -->
-            <div class="claimed-block" style="display: none;">
-                <a href="javascript:void(0)" class="btn-claimed"><img src="assets/img/btn-claim.png" alt="" class="imgFull"></a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="speed-page-section miner-event modal-slide-up modalMinerEvent">
-    <a href="javascript:void(0)" class="btn-close">
-        <img src="assets/img/btn-x.png" alt="" class="imgFull">
-    </a>
-    <div class="speed-page-content">
-        <div class="tab-panel">
-            <a href="javascript:void(0)" class="btn-friend is-active" data-panel="#panel-4" data-modal=".modalMinerEvent">
-                <img src="assets/img/btn-friend.png" alt="" class="imgFull">
-            </a>
-            <a href="javascript:void(0)" class="btn-mine" data-panel="#panel-5" data-modal=".modalMinerEvent">
-                <img src="assets/img/btn-mine.png" alt="" class="imgFull">
-            </a>
-        </div>
-        <div id="panel-4" class="tab-content is-active">
-            <div class="title-top">
-                <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
-                <div class="right">
-                    <h2 class="balooTammaExtraBold title-head">TOP NEW FRIENDS</h2>
-                    <div class="text">Total number of new friends (July 1 - July 5)</div>
-                </div>
-            </div>
-            <div class="gdm-bar">
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_02</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="num-1">+234</div>
-                        <div class="num-2 color-orange">200 USDT</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_03</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="num-1">+190</div>
-                        <div class="num-2 color-orange">150 USDT</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_04</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="num-1">+150</div>
-                        <div class="num-2 color-orange">100 USDT</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_05</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="num-1">+100</div>
-                        <div class="num-2 color-orange">50 USDT</div>
-                    </div>
-                </div>
-            </div>
-            <div class="your-rank">
-                <p class="rank-num">Rank: 167</p>
-                <div class="gdm-bar">
-                    <div class="gdm-bar-item">
-                        <div class="item-left">
-                            <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                            <div class="text">YOUR NAME</div>
+                <div id="panel-1" class="tab-content is-active">
+                    <div class="title-top">
+                        <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
+                        <div class="right">
+                            <h2 class="balooTammaExtraBold title-head">YOUR ZONE: 0007</h2>
+                            <div class="text">Your ranking: 100/ 25.540 people</div>
                         </div>
-                        <div class="item-right">
-                            <div class="num-1">+334</div>
-                            <div class="num-2 color-orange">200 USDT</div>
+                    </div>
+                    <div class="gdm-bar">
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-top">
+                        <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
+                        <div class="right">
+                            <h2 class="balooTammaExtraBold title-head">TOP 3 EARN</h2>
+                            <div class="text">Lastest 24 hours results.</div>
+                        </div>
+                    </div>
+                    <div class="gdm-bar">
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="panel-2" class="tab-content">
+                    <div class="title-top">
+                        <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
+                        <div class="right">
+                            <h2 class="balooTammaExtraBold title-head">TOP GLOBAL GDM</h2>
+                            <div class="text">Your ranking: 100.000</div>
+                        </div>
+                    </div>
+                    <div class="gdm-bar">
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-top">
+                        <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
+                        <div class="right">
+                            <h2 class="balooTammaExtraBold title-head">TOP 3 EARN</h2>
+                            <div class="text">Lastest 24 hours results.</div>
+                        </div>
+                    </div>
+                    <div class="gdm-bar">
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                                <div class="text">0010.252550</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="panel-3" class="tab-content">
+                    <div class="title-top">
+                        <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
+                        <div class="right">
+                            <h2 class="balooTammaExtraBold title-head">TOP GLOBAL FRIENDS</h2>
+                            <div class="text">Your ranking: 100.000</div>
+                        </div>
+                    </div>
+                    <div class="gdm-bar">
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="text">3400 friends</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_02</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="text">3400 friends</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_03</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="text">3400 friends</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_04</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="text">3400 friends</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-top">
+                        <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
+                        <div class="right">
+                            <h2 class="balooTammaExtraBold title-head">TOP 3 NEW FRIENDS</h2>
+                            <div class="text">Lastest 24 hours results.</div>
+                        </div>
+                    </div>
+                    <div class="gdm-bar">
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_01</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="text">+334</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_02</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="text">+234</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_03</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="text">+190</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="title-bot">
-                <p class="balooTammaRegular">Joining the event will get 0.5 GDM free</p>
-                <p class="color-yellow balooTammaBold">Being in the top 5 will receive USDT rewards</p>
-            </div>
-        </div>
-        <div id="panel-5" class="tab-content">
-            <div class="title-top">
-                <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
-                <div class="right">
-                    <h2 class="balooTammaExtraBold title-head">TOP LOOTERS</h2>
-                    <div class="text">Total number of loot (July 1 - July 5)</div>
-                </div>
-            </div>
-            <div class="gdm-bar">
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_02</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="num-1">1200</div>
-                        <div class="num-2">100 GDM</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_03</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="num-1">1200</div>
-                        <div class="num-2">100 GDM</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_04</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="num-1">1200</div>
-                        <div class="num-2">100 GDM</div>
-                    </div>
-                </div>
-                <div class="gdm-bar-item">
-                    <div class="item-left">
-                        <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                        <div class="text">USERNAME_05</div>
-                    </div>
-                    <div class="item-right">
-                        <div class="num-1">1200</div>
-                        <div class="num-2">100 GDM</div>
-                    </div>
-                </div>
-            </div>
-            <div class="your-rank">
-                <p class="rank-num">Rank: 167</p>
-                <div class="gdm-bar">
-                    <div class="gdm-bar-item">
-                        <div class="item-left">
-                            <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
-                            <div class="text">YOUR NAME</div>
+        </section>
+        <section class="speed-page-section miner-daily-section modal-slide-up modalMinerDaily">
+            <a href="javascript:void(0)" class="btn-close">
+                <img src="assets/img/btn-x.png" alt="" class="imgFull">
+            </a>
+            <div class="speed-page-content">
+                <div class="speed-need-upgrade">
+                    <div class="speed-upgrade-item future-level btn-fullwidth bg-gradient">
+                        <div class="speed-upgrade-item-contain bg-purple">
+                            <div class="bungeeRegular">DAY 2</div>
+                            <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                            <div class="bungeeRegular">0.030250</div>
                         </div>
-                        <div class="item-right">
-                            <div class="num-1">1200</div>
-                            <div class="num-2">100 GDM</div>
+                    </div>
+                    <div class="speed-upgrade-item next-level btn-fullwidth bg-gradient">
+                        <div class="speed-upgrade-item-contain bg-black">
+                            <div class="bungeeRegular">DAY 1</div>
+                            <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                            <div class="bungeeRegular">0.020250</div>
                         </div>
                     </div>
                 </div>
+                <div class="speed-current">
+                    <div class="chart">
+                        <div class="chart-content">
+                            <div class="chart-item"></div>
+                            <div class="chart-item chart-item-ac"></div>
+                            <div class="chart-item"></div>
+                        </div>
+                    </div>
+                    <div class="speed-current-claimed btn-fullwidth bg-gradient">
+                        <div class="speed-current-claimed-contain bg-blue pr">
+                            <div class="bungeeRegular">DAY 0</div>
+                            <div class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></div>
+                            <div class="bungeeRegular">0.010250</div>
+                            <a href="#" class="btn-claimed"><img src="assets/img/btn-claimed-2.png" alt=""
+                                    class="imgFull"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="upgrade-speed">
+                    <div class="burn balooTammuduBold">FREE WELLCOME GIFT</div>
+                    <!-- Khi Claimed thì sẽ ẩn html này đi -->
+                    <p class="text balooTammaRegular color-gray">YOU WILL RECEIVE GIFTS EVERY 24 HOURS</p>
+                    <div class="countdown-block">
+                        <div class="icon">
+                            <img src="assets/img/icon-clock.svg" alt="" class="imgFull">
+                        </div>
+                        <div class="timer bg-black">
+                            <div class="hour bungeeRegular color-purple">00</div>
+                            <span class="dot bungeeRegular color-purple">:</span>
+                            <div class="minute bungeeRegular color-purple">00</div>
+                            <span class="dot bungeeRegular color-purple">:</span>
+                            <div class="second bungeeRegular color-purple">04</div>
+                        </div>
+                    </div>
+                    <!-- --------------------- và cho hiện thẻ div ở bên dưới lên -->
+                    <div class="claimed-block" style="display: none;">
+                        <a href="javascript:void(0)" class="btn-claimed"><img src="assets/img/btn-claim.png" alt=""
+                                class="imgFull"></a>
+                    </div>
+                </div>
             </div>
-            <div class="title-bot">
-                <p class="balooTammaRegular">Joining the event will get 0.5 GDM free</p>
-                <p class="color-yellow balooTammaBold">Being in the top 5 will receive USDT rewards</p>
+        </section>
+        <section class="speed-page-section miner-event modal-slide-up modalMinerEvent">
+            <a href="javascript:void(0)" class="btn-close">
+                <img src="assets/img/btn-x.png" alt="" class="imgFull">
+            </a>
+            <div class="speed-page-content">
+                <div class="tab-panel">
+                    <a href="javascript:void(0)" class="btn-friend is-active" data-panel="#panel-4"
+                        data-modal=".modalMinerEvent">
+                        <img src="assets/img/btn-friend.png" alt="" class="imgFull">
+                    </a>
+                    <a href="javascript:void(0)" class="btn-mine" data-panel="#panel-5" data-modal=".modalMinerEvent">
+                        <img src="assets/img/btn-mine.png" alt="" class="imgFull">
+                    </a>
+                </div>
+                <div id="panel-4" class="tab-content is-active">
+                    <div class="title-top">
+                        <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
+                        <div class="right">
+                            <h2 class="balooTammaExtraBold title-head">TOP NEW FRIENDS</h2>
+                            <div class="text">Total number of new friends (July 1 - July 5)</div>
+                        </div>
+                    </div>
+                    <div class="gdm-bar">
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_02</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="num-1">+234</div>
+                                <div class="num-2 color-orange">200 USDT</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_03</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="num-1">+190</div>
+                                <div class="num-2 color-orange">150 USDT</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_04</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="num-1">+150</div>
+                                <div class="num-2 color-orange">100 USDT</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_05</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="num-1">+100</div>
+                                <div class="num-2 color-orange">50 USDT</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="your-rank">
+                        <p class="rank-num">Rank: 167</p>
+                        <div class="gdm-bar">
+                            <div class="gdm-bar-item">
+                                <div class="item-left">
+                                    <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                    <div class="text">YOUR NAME</div>
+                                </div>
+                                <div class="item-right">
+                                    <div class="num-1">+334</div>
+                                    <div class="num-2 color-orange">200 USDT</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-bot">
+                        <p class="balooTammaRegular">Joining the event will get 0.5 GDM free</p>
+                        <p class="color-yellow balooTammaBold">Being in the top 5 will receive USDT rewards</p>
+                    </div>
+                </div>
+                <div id="panel-5" class="tab-content">
+                    <div class="title-top">
+                        <div class="icon"><img src="assets/img/icon-medal.svg" alt="" class="imgFull"></div>
+                        <div class="right">
+                            <h2 class="balooTammaExtraBold title-head">TOP LOOTERS</h2>
+                            <div class="text">Total number of loot (July 1 - July 5)</div>
+                        </div>
+                    </div>
+                    <div class="gdm-bar">
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_02</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="num-1">1200</div>
+                                <div class="num-2">100 GDM</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_03</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="num-1">1200</div>
+                                <div class="num-2">100 GDM</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_04</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="num-1">1200</div>
+                                <div class="num-2">100 GDM</div>
+                            </div>
+                        </div>
+                        <div class="gdm-bar-item">
+                            <div class="item-left">
+                                <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                <div class="text">USERNAME_05</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="num-1">1200</div>
+                                <div class="num-2">100 GDM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="your-rank">
+                        <p class="rank-num">Rank: 167</p>
+                        <div class="gdm-bar">
+                            <div class="gdm-bar-item">
+                                <div class="item-left">
+                                    <div class="icon"><img src="assets/img/icon-user.svg" alt="" class="imgFull"></div>
+                                    <div class="text">YOUR NAME</div>
+                                </div>
+                                <div class="item-right">
+                                    <div class="num-1">1200</div>
+                                    <div class="num-2">100 GDM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-bot">
+                        <p class="balooTammaRegular">Joining the event will get 0.5 GDM free</p>
+                        <p class="color-yellow balooTammaBold">Being in the top 5 will receive USDT rewards</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="main-menu-section">
-    <a href="boost.html" class="btn-menu btn-boost">
-        <img src="assets/img/btn-boost.png" alt="" class="imgFull">
-    </a> 
-    <a href="offer.html" class="btn-menu btn-offer">
-        <img src="assets/img/btn-offer.png" alt="" class="imgFull">
-    </a>
-    <a href="miner.html" class="btn-menu btn-miner is-active">
-        <img src="assets/img/btn-miner.png" alt="" class="imgFull">
-    </a>
-    <a href="growth.html" class="btn-menu btn-growth">
-        <img src="assets/img/btn-growth.png" alt="" class="imgFull">
-    </a>
-    <a href="#" class="btn-menu btn-dapps">
-        <img src="assets/img/btn-dapps.png" alt="" class="imgFull">
-    </a>
-</section>
+        </section>
+        <section class="main-menu-section">
+            <a href="boost.html" class="btn-menu btn-boost">
+                <img src="assets/img/btn-boost.png" alt="" class="imgFull">
+            </a>
+            <a href="offer.html" class="btn-menu btn-offer">
+                <img src="assets/img/btn-offer.png" alt="" class="imgFull">
+            </a>
+            <a href="miner.html" class="btn-menu btn-miner is-active">
+                <img src="assets/img/btn-miner.png" alt="" class="imgFull">
+            </a>
+            <a href="growth.html" class="btn-menu btn-growth">
+                <img src="assets/img/btn-growth.png" alt="" class="imgFull">
+            </a>
+            <a href="#" class="btn-menu btn-dapps">
+                <img src="assets/img/btn-dapps.png" alt="" class="imgFull">
+            </a>
+        </section>
 
         <div class="popup popupNotify px">
-    
-</div>
+
+        </div>
 
 
 
@@ -608,7 +626,18 @@
 
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/page_all.js"></script>
-    </body>
+    <script>
+        $(document).ready(function () {
+            console.log('Load done');
+            const overflow = 100;
+            document.body.style.overflowY = 'hidden';
+            document.body.style.marginTop = `${overflow}px`;
+            document.body.style.height = window.innerHeight + overflow + "px";
+            document.body.style.paddingBottom = `${overflow}px`;
+            window.scrollTo(0, overflow);
+
+        });
+    </script>
+</body>
+
 </html>
-
-
