@@ -125,7 +125,8 @@
 
 body, html {
   scroll-behavior: scroll-behavior;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
   scrollbar-width: 0px;
 }
 body::-webkit-scrollbar, html::-webkit-scrollbar {
@@ -483,7 +484,7 @@ screen > div {
     width: 100%;
     height: 100%;
   }
-  .app.isScaled .screen-boost-contain, .app.isScaled .screen-offer-contain, .app.isScaled .screen-loots-contain, .app.isScaled .screen-miner-contain {
+  .app.isScaled .screen-boost-contain, .app.isScaled .screen-offer-contain, .app.isScaled .screen-loots-contain, .app.isScaled .screen-main-contain {
     -webkit-transform: scale(0.85) translateY(-10.6666666667vw);
        -moz-transform: scale(0.85) translateY(-10.6666666667vw);
         -ms-transform: scale(0.85) translateY(-10.6666666667vw);
@@ -1904,6 +1905,7 @@ screen > div {
   }
   .wrapper {
     width: 375px;
+    height: 590px;
     margin: auto;
     overflow: hidden;
     background: #2a1a7d;
@@ -1924,7 +1926,7 @@ screen > div {
   .app::-webkit-scrollbar {
     width: 0px;
   }
-  .app.isScaled .screen-boost-contain, .app.isScaled .screen-offer-contain, .app.isScaled .screen-loots-contain, .app.isScaled .screen-miner-contain {
+  .app.isScaled .screen-boost-contain, .app.isScaled .screen-offer-contain, .app.isScaled .screen-loots-contain, .app.isScaled .screen-main-contain {
     -webkit-transform: scale(0.9) translateY(-40px);
        -moz-transform: scale(0.9) translateY(-40px);
         -ms-transform: scale(0.9) translateY(-40px);

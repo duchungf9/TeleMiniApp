@@ -6,34 +6,40 @@
  * @version 
  * Copyright 2024. MIT licensed.
  */$(document).ready(function () {
-  $(document).ready(function () {
-    var userAgent = navigator.userAgent || navigator.vendor || window.opera; // Check if the device is an iPad
+  Telegram.WebApp.expand();
+  window.addEventListener("touchmove", e => e.preventDefault(), {
+    passive: false
+  });
+  window.scrollTo(0, 100);
+  Telegram.WebApp.ready(); // Check 
 
-    function isiPad() {
-      return /iPad|Macintosh/.test(userAgent) && ('ontouchstart' in window || navigator.maxTouchPoints > 0);
-    } // Check if the operating system is macOS
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera; // Check if the device is an iPad
 
-
-    function isMacOS() {
-      return /Mac OS X/.test(userAgent) && !('ontouchstart' in window);
-    } // Check if the operating system is Windows
-
-
-    function isWindows() {
-      return /Windows NT/.test(userAgent);
-    } // Using the functions to log device or OS
+  function isiPad() {
+    return /iPad|Macintosh/.test(userAgent) && ('ontouchstart' in window || navigator.maxTouchPoints > 0);
+  } // Check if the operating system is macOS
 
 
-    if (isiPad()) {
-      $('.app').addClass('isScaled');
-    } else if (isMacOS()) {
-      $('.app').addClass('isScaled');
-    } else if (isWindows()) {
-      $('.app').addClass('isScaled');
-    } else {
-      console.log("Unknown device or operating system.");
-    }
-  }); // Chuyển đồi tab ở trang Rank và Event
+  function isMacOS() {
+    return /Mac OS X/.test(userAgent) && !('ontouchstart' in window);
+  } // Check if the operating system is Windows
+
+
+  function isWindows() {
+    return /Windows NT/.test(userAgent);
+  } // Using the functions to log device or OS
+
+
+  if (isiPad()) {
+    $('.app').addClass('isScaled');
+  } else if (isMacOS()) {
+    $('.app').addClass('isScaled');
+  } else if (isWindows()) {
+    $('.app').addClass('isScaled');
+  } else {
+    console.log("Unknown device or operating system.");
+  } // Chuyển đồi tab ở trang Rank và Event
+
 
   $('.tab-panel a').click(function () {
     var tabPanel = $(this).data('panel');
