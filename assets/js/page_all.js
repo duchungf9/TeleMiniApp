@@ -7,7 +7,6 @@
  * Copyright 2024. MIT licensed.
  */Telegram.WebApp.expand();
  window.addEventListener("touchmove", function(e) {
-  document.body.style.overflow = 'hidden'; // Disable scrolling on the body
   if (!e.target.closest('.scroll-section-content')) {
     e.preventDefault();
   }
@@ -104,7 +103,11 @@ function showNotifyLooted(msg) {
   $('.notify-looted-section .num').html(msg);
   // When opening the popup
   document.body.classList.add('fixed');
-
+  window.addEventListener("touchmove", function(e) {
+    if (!e.target.closest('.scroll-section-content')) {
+      e.preventDefault();
+    }
+  }, { passive: false });
 // When closing the popup
 
   setTimeout(function () {
@@ -116,6 +119,11 @@ function showNotifyLooted(msg) {
 function showModalSlideUp(modalName) {
   $(modalName).addClass('slide-up');
   document.body.classList.add('fixed');
+  window.addEventListener("touchmove", function(e) {
+    if (!e.target.closest('.scroll-section-content')) {
+      e.preventDefault();
+    }
+  }, { passive: false });
   var btnClose = $(modalName).find('.btn-close');
   $(btnClose).click(function () {
     $(modalName).removeClass('slide-up');
