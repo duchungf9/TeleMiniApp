@@ -19,64 +19,68 @@
     <img src="assets/img/bg-float.svg" alt="" class="imgFull pr">
 </div>
 <main class="app">
-    <section class="account-info-section">
-        <h2 class="balooTammaExtraBold">Meimei89 <div class="icon-premieum"><img src="assets/img/icon-premium.png" alt="" class="imgFull"></div></h1>
-        <div class="diamon-will-claim">
-            <span class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></span>
-            <span class="num bungeeRegular">0000.010250</span>
-        </div>
-        <div class="last-claim">
-            <p class="balooTammaRegular">Last claimed: <span class="num">0.025</span> GDM</p>
-        </div>
-    </section>
-    <section class="miner-section">
-        <div class="miner-section-content">
-            <div class="btn-left-group btn-group">
-                <a href="javascript:void(0)" class="btn-event" onclick="showModalSlideUp('.modalMinerEvent')">
-                    <img src="assets/img/btn-event.png" alt="" class="imgFull">
-                </a>
-                <a href="miner-loot.html" class="btn-loot">
-                    <img src="assets/img/btn-loot.png" alt="" class="imgFull">
-                </a>
-            </div>
-            <div class="miner-info">
-                <div class="miner-info-top">
-                    <div class="text balooTammuduBold">MINNER</div>
-                    <div class="num bungeeRegular" data-number="0.000238">0.000238</div>
+    <screen class="screen-miner">
+        <div class="screen-miner-contain">
+            <section class="account-info-section">
+                <h2 class="balooTammaExtraBold">Meimei89 <div class="icon-premieum"><img src="assets/img/icon-premium.png" alt="" class="imgFull"></div></h1>
+                <div class="diamon-will-claim">
+                    <span class="icon"><img src="assets/img/icon-1.svg" alt="" class="imgFull"></span>
+                    <span class="num bungeeRegular">0000.010250</span>
                 </div>
-                <div class="miner-img">
-                    <img src="assets/img/img-demo-3.png" alt="" class="imgFull">
+                <div class="last-claim">
+                    <p class="balooTammaRegular">Last claimed: <span class="num">0.025</span> GDM</p>
                 </div>
-                <div class="miner-info-item">
-                    <div class="miner-item bg-bdrs-black"><p>SPEED PER HOUR:</p> <span class="color-blue bungeeRegular num">0.025</span><span class="color-purple">/HOUR</span></div>
-                    <div class="miner-item bg-bdrs-black"><p>STORAGE:</p> <span class="color-blue bungeeRegular num">0.05</span><span class="color-purple">/TIME</span></div>
+            </section>
+            <section class="miner-section">
+                <div class="miner-section-content">
+                    <div class="btn-left-group btn-group">
+                        <a href="javascript:void(0)" class="btn-event" onclick="showModalSlideUp('.modalMinerEvent')">
+                            <img src="assets/img/btn-event.png" alt="" class="imgFull">
+                        </a>
+                        <a href="miner-loot.html" class="btn-loot">
+                            <img src="assets/img/btn-loot.png" alt="" class="imgFull">
+                        </a>
+                    </div>
+                    <div class="miner-info">
+                        <div class="miner-info-top">
+                            <div class="text balooTammuduBold">MINNER</div>
+                            <div class="num bungeeRegular" data-number="0.000238">0.000238</div>
+                        </div>
+                        <div class="miner-img">
+                            <img src="assets/img/img-demo-3.png" alt="" class="imgFull">
+                        </div>
+                        <div class="miner-info-item">
+                            <div class="miner-item bg-bdrs-black"><p>SPEED PER HOUR:</p> <span class="color-blue bungeeRegular num">0.025</span><span class="color-purple">/HOUR</span></div>
+                            <div class="miner-item bg-bdrs-black"><p>STORAGE:</p> <span class="color-blue bungeeRegular num">0.05</span><span class="color-purple">/TIME</span></div>
+                        </div>
+                    </div>
+                    <div class="btn-right-group btn-group">
+                        <a href="javascript:void(0)" class="btn-daily" onclick="showModalSlideUp('.modalMinerDaily')">
+                            <img src="assets/img/btn-daily.png" alt="" class="imgFull">
+                        </a>
+                        <a href="javascript:void(0)" class="btn-rank" onclick="showModalSlideUp('.modalMinerRank')">
+                            <img src="assets/img/btn-rank.png" alt="" class="imgFull">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="btn-right-group btn-group">
-                <a href="javascript:void(0)" class="btn-daily" onclick="showModalSlideUp('.modalMinerDaily')">
-                    <img src="assets/img/btn-daily.png" alt="" class="imgFull">
-                </a>
-                <a href="javascript:void(0)" class="btn-rank" onclick="showModalSlideUp('.modalMinerRank')">
-                    <img src="assets/img/btn-rank.png" alt="" class="imgFull">
-                </a>
-            </div>
+                <div class="countdown-block" style="display: none;">
+                    <div class="icon">
+                        <img src="assets/img/icon-clock.svg" alt="" class="imgFull">
+                    </div>
+                    <div class="timer bg-black">
+                        <div class="hour bungeeRegular color-purple">00</div>
+                        <span class="dot bungeeRegular color-purple">:</span>
+                        <div class="minute bungeeRegular color-purple">00</div>
+                        <span class="dot bungeeRegular color-purple">:</span>
+                        <div class="second bungeeRegular color-purple">04</div>
+                    </div>
+                </div>
+                <div class="claimed-block">
+                    <button class="btn-claimed"><img src="assets/img/btn-claim.png" alt="" class="imgFull"></button>
+                </div>
+            </section>
         </div>
-        <div class="countdown-block" style="display: none;">
-            <div class="icon">
-                <img src="assets/img/icon-clock.svg" alt="" class="imgFull">
-            </div>
-            <div class="timer bg-black">
-                <div class="hour bungeeRegular color-purple">00</div>
-                <span class="dot bungeeRegular color-purple">:</span>
-                <div class="minute bungeeRegular color-purple">00</div>
-                <span class="dot bungeeRegular color-purple">:</span>
-                <div class="second bungeeRegular color-purple">04</div>
-            </div>
-        </div>
-        <div class="claimed-block">
-            <button class="btn-claimed"><img src="assets/img/btn-claim.png" alt="" class="imgFull"></button>
-        </div>
-    </section>
+    </screen>
 </main>
 <section class="speed-page-section miner-event modal-slide-up modalMinerRank">
     <a href="javascript:void(0)" class="btn-close">
