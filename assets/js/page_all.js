@@ -6,22 +6,14 @@
  * @version 
  * Copyright 2024. MIT licensed.
  */$(document).ready(function () {
-  // const overflow = 100;
-  // document.body.style.overflowY = 'hidden'; // document.body.style.marginTop = `${overflow}px`;
-  // document.body.style.height = window.innerHeight + overflow + "px";
-  // document.body.style.paddingBottom = `${overflow}px`;
-  // window.scrollTo(0, overflow);
-
-  Telegram.WebApp.expand();
-  window.addEventListener("touchmove", function (e) {
-    if (!e.target.closest('.scroll-section-content, .speed-page-content')) {
-      e.preventDefault();
-    }
-  }, {
-    passive: false
-  });
-  // window.scrollTo(0, 100);
-  Telegram.WebApp.ready(); // Check 
+  
+  Telegram.WebApp.expand()
+  window.addEventListener("touchmove", function(e) {
+      if (!e.target.closest('.scroll-section-content')) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+  Telegram.WebApp.ready();
 
   var userAgent = navigator.userAgent || navigator.vendor || window.opera; // Check if the device is an iPad
 
