@@ -7,9 +7,11 @@
  * Copyright 2024. MIT licensed.
  */Telegram.WebApp.expand();
 window.addEventListener("touchmove", function (e) {
-  if (!e.target.closest('.scroll-section-content')) {
-    e.preventDefault();
+  if (e.target.closest('.scroll-section-content')) {
+    return;
   }
+
+  e.preventDefault();
 }, {
   passive: false
 });
