@@ -6,15 +6,11 @@
  * @version 
  * Copyright 2024. MIT licensed.
  */Telegram.WebApp.expand();
-window.addEventListener("touchmove", function (e) {
-  if (e.target.closest('.scroll-section-content')) {
-    return;
+ window.addEventListener("touchmove", function(e) {
+  if (!e.target.closest('.scroll-section-content')) {
+    e.preventDefault();
   }
-
-  e.preventDefault();
-}, {
-  passive: false
-});
+}, { passive: false });
 Telegram.WebApp.ready();
 $(document).ready(function () {
   // Check 
