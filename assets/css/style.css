@@ -485,13 +485,6 @@ screen > div {
          -o-transform: scale(0.85) translateY(-10.6666666667vw);
             transform: scale(0.85) translateY(-10.6666666667vw);
   }
-  .app.isScaled .notify-looted-section {
-    -webkit-transform: scale(0.9) translateX(-55%) translateY(-10.1333333333vw);
-       -moz-transform: scale(0.9) translateX(-55%) translateY(-10.1333333333vw);
-        -ms-transform: scale(0.9) translateX(-55%) translateY(-10.1333333333vw);
-         -o-transform: scale(0.9) translateX(-55%) translateY(-10.1333333333vw);
-            transform: scale(0.9) translateX(-55%) translateY(-10.1333333333vw);
-  }
   .app.isScaled .bottom-group {
     padding-bottom: 2.6666666667vw !important;
   }
@@ -1927,13 +1920,6 @@ screen > div {
          -o-transform: scale(0.9) translateY(-40px);
             transform: scale(0.9) translateY(-40px);
   }
-  .app.isScaled .notify-looted-section {
-    -webkit-transform: scale(0.9) translateX(-55%) translateY(-38px);
-       -moz-transform: scale(0.9) translateX(-55%) translateY(-38px);
-        -ms-transform: scale(0.9) translateX(-55%) translateY(-38px);
-         -o-transform: scale(0.9) translateX(-55%) translateY(-38px);
-            transform: scale(0.9) translateX(-55%) translateY(-38px);
-  }
   .app.isScaled .bottom-group {
     padding-bottom: 10px !important;
   }
@@ -1941,6 +1927,13 @@ screen > div {
     height: -webkit-calc(100% - 190px);
     height: -moz-calc(100% - 190px);
     height: calc(100% - 190px);
+  }
+  .notify-looted-content {
+    -webkit-transform: scale(0.9) translateX(-55%) translateY(-45px) !important;
+       -moz-transform: scale(0.9) translateX(-55%) translateY(-45px) !important;
+        -ms-transform: scale(0.9) translateX(-55%) translateY(-45px) !important;
+         -o-transform: scale(0.9) translateX(-55%) translateY(-45px) !important;
+            transform: scale(0.9) translateX(-55%) translateY(-45px) !important;
   }
   .main-menu-section {
     position: -webkit-sticky;
