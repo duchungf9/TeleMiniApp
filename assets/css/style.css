@@ -490,6 +490,7 @@ screen > div {
         -ms-transform: scale(0.9) translateY(-6.6666666667vw);
          -o-transform: scale(0.9) translateY(-6.6666666667vw);
             transform: scale(0.9) translateY(-6.6666666667vw);
+    height: auto;
   }
   .screen-offer-contain.isScaled .scroll-section {
     height: -webkit-calc(100% - 50.6666666667vw);
@@ -1926,6 +1927,7 @@ screen > div {
         -ms-transform: scale(0.9) translateY(-25px);
          -o-transform: scale(0.9) translateY(-25px);
             transform: scale(0.9) translateY(-25px);
+    height: auto;
   }
   .screen-offer-contain.isScaled .scroll-section {
     height: -webkit-calc(100% - 190px);
