@@ -473,25 +473,32 @@ screen > div {
         -ms-flex-align: center;
             align-items: center;
   }
+  .screen-boost-contain.isScaled, .screen-offer-contain.isScaled, .screen-loots-contain.isScaled, .screen-main-contain.isScaled, .screen-claimed-contain.isScaled {
+    -webkit-transform: scale(0.9) translateY(-10.6666666667vw);
+       -moz-transform: scale(0.9) translateY(-10.6666666667vw);
+        -ms-transform: scale(0.9) translateY(-10.6666666667vw);
+         -o-transform: scale(0.9) translateY(-10.6666666667vw);
+            transform: scale(0.9) translateY(-10.6666666667vw);
+  }
+  .screen-boost-contain.isScaled .bottom-group, .screen-offer-contain.isScaled .bottom-group, .screen-loots-contain.isScaled .bottom-group, .screen-main-contain.isScaled .bottom-group, .screen-claimed-contain.isScaled .bottom-group {
+    padding-bottom: 2.6666666667vw !important;
+  }
+  .modalBoostSpeed.isScaled .speed-page-content, .modalBoostCloud.isScaled .speed-page-content, .modalBoostStorage.isScaled .speed-page-content, .modalBoostEngine.isScaled .speed-page-content, .modalMinerDaily.isScaled .speed-page-content {
+    -webkit-transform: scale(0.9) translateY(-6.6666666667vw);
+       -moz-transform: scale(0.9) translateY(-6.6666666667vw);
+        -ms-transform: scale(0.9) translateY(-6.6666666667vw);
+         -o-transform: scale(0.9) translateY(-6.6666666667vw);
+            transform: scale(0.9) translateY(-6.6666666667vw);
+  }
+  .screen-offer-contain.isScaled .scroll-section {
+    height: -webkit-calc(100% - 50.6666666667vw);
+    height: -moz-calc(100% - 50.6666666667vw);
+    height: calc(100% - 50.6666666667vw);
+  }
   .app {
     margin: auto;
     width: 100%;
     height: 100%;
-  }
-  .app.isScaled .screen-boost-contain, .app.isScaled .screen-offer-contain, .app.isScaled .screen-loots-contain, .app.isScaled .screen-main-contain, .app.isScaled .screen-miner-contain {
-    -webkit-transform: scale(0.85) translateY(-10.6666666667vw);
-       -moz-transform: scale(0.85) translateY(-10.6666666667vw);
-        -ms-transform: scale(0.85) translateY(-10.6666666667vw);
-         -o-transform: scale(0.85) translateY(-10.6666666667vw);
-            transform: scale(0.85) translateY(-10.6666666667vw);
-  }
-  .app.isScaled .bottom-group {
-    padding-bottom: 2.6666666667vw !important;
-  }
-  .app.isScaled .screen-offer-contain .scroll-section {
-    height: -webkit-calc(100% - 50.6666666667vw);
-    height: -moz-calc(100% - 50.6666666667vw);
-    height: calc(100% - 50.6666666667vw);
   }
   .account-info-section {
     text-align: center;
@@ -709,7 +716,7 @@ screen > div {
     padding-right: 2.6666666667vw;
   }
   .speed-page-section.miner-rank {
-    padding-bottom: 21.3333333333vw;
+    padding-bottom: 22.6666666667vw;
   }
   .speed-page-section .btn-close {
     position: absolute;
@@ -1902,6 +1909,28 @@ screen > div {
     top: 0;
     z-index: 0;
   }
+  .screen-boost-contain.isScaled, .screen-offer-contain.isScaled, .screen-loots-contain.isScaled, .screen-main-contain.isScaled, .screen-claimed-contain.isScaled {
+    -webkit-transform: scale(0.9) translateY(-40px);
+       -moz-transform: scale(0.9) translateY(-40px);
+        -ms-transform: scale(0.9) translateY(-40px);
+         -o-transform: scale(0.9) translateY(-40px);
+            transform: scale(0.9) translateY(-40px);
+  }
+  .screen-boost-contain.isScaled .bottom-group, .screen-offer-contain.isScaled .bottom-group, .screen-loots-contain.isScaled .bottom-group, .screen-main-contain.isScaled .bottom-group, .screen-claimed-contain.isScaled .bottom-group {
+    padding-bottom: 10px !important;
+  }
+  .modalBoostSpeed.isScaled .speed-page-content, .modalBoostCloud.isScaled .speed-page-content, .modalBoostStorage.isScaled .speed-page-content, .modalBoostEngine.isScaled .speed-page-content, .modalMinerDaily.isScaled .speed-page-content {
+    -webkit-transform: scale(0.9) translateY(-25px);
+       -moz-transform: scale(0.9) translateY(-25px);
+        -ms-transform: scale(0.9) translateY(-25px);
+         -o-transform: scale(0.9) translateY(-25px);
+            transform: scale(0.9) translateY(-25px);
+  }
+  .screen-offer-contain.isScaled .scroll-section {
+    height: -webkit-calc(100% - 190px);
+    height: -moz-calc(100% - 190px);
+    height: calc(100% - 190px);
+  }
   .app {
     margin: auto;
     width: 100%;
@@ -1912,21 +1941,6 @@ screen > div {
   }
   .app::-webkit-scrollbar {
     width: 0px;
-  }
-  .app.isScaled .screen-boost-contain, .app.isScaled .screen-offer-contain, .app.isScaled .screen-loots-contain, .app.isScaled .screen-main-contain, .app.isScaled .screen-miner-contain {
-    -webkit-transform: scale(0.9) translateY(-40px);
-       -moz-transform: scale(0.9) translateY(-40px);
-        -ms-transform: scale(0.9) translateY(-40px);
-         -o-transform: scale(0.9) translateY(-40px);
-            transform: scale(0.9) translateY(-40px);
-  }
-  .app.isScaled .bottom-group {
-    padding-bottom: 10px !important;
-  }
-  .app.isScaled .screen-offer-contain .scroll-section {
-    height: -webkit-calc(100% - 190px);
-    height: -moz-calc(100% - 190px);
-    height: calc(100% - 190px);
   }
   .notify-looted-content {
     -webkit-transform: scale(0.9) translateX(-55%) translateY(-45px) !important;
@@ -2150,7 +2164,7 @@ screen > div {
     padding-right: 10px;
   }
   .speed-page-section.miner-rank {
-    padding-bottom: 80px;
+    padding-bottom: 85px;
   }
   .speed-page-section .btn-close {
     position: absolute;

@@ -1,9 +1,18 @@
-Telegram.WebApp.expand();
- window.addEventListener("touchmove", function(e) {
+/*!
+ * 
+ * 
+ * 
+ * @author HoaBui
+ * @version 
+ * Copyright 2024. MIT licensed.
+ */Telegram.WebApp.expand();
+window.addEventListener("touchmove", function (e) {
   if (!e.target.closest('.scroll-section-content')) {
     e.preventDefault();
   }
-}, { passive: false });
+}, {
+  passive: false
+});
 Telegram.WebApp.ready();
 $(document).ready(function () {
   // Check 
@@ -25,11 +34,11 @@ $(document).ready(function () {
 
 
   if (isiPad()) {
-    $('.app').addClass('isScaled');
+    $('.screen-main-contain, .screen-offer-contain, .screen-boost-contain, .screen-loots-contain, .modalBoostSpeed , .modalBoostCloud, .modalBoostStorage, .modalBoostEngine, .modalMinerDaily').addClass('isScaled');
   } else if (isMacOS()) {
-    $('.app').addClass('isScaled');
+    $('.screen-main-contain, .screen-offer-contain, .screen-boost-contain, .screen-loots-contain, .modalBoostSpeed , .modalBoostCloud, .modalBoostStorage, .modalBoostEngine, .modalMinerDaily').addClass('isScaled');
   } else if (isWindows()) {
-    $('.app').addClass('isScaled');
+    $('.screen-main-contain, .screen-offer-contain, .screen-boost-contain, .screen-loots-contain, .modalBoostSpeed , .modalBoostCloud, .modalBoostStorage, .modalBoostEngine, .modalMinerDaily').addClass('isScaled');
   } else {
     console.log("Unknown device or operating system.");
   } // Chuyển đồi tab ở trang Rank và Event
@@ -93,15 +102,16 @@ function showPopup(msg) {
 
 function showNotifyLooted(msg) {
   $('.notify-looted-section').addClass('show-notify-looted');
-  $('.notify-looted-section .num').html(msg);
-  // When opening the popup
+  $('.notify-looted-section .num').html(msg); // When opening the popup
+
   document.body.classList.add('fixed');
-  window.addEventListener("touchmove", function(e) {
+  window.addEventListener("touchmove", function (e) {
     if (!e.target.closest('.scroll-section-content')) {
       e.preventDefault();
     }
-  }, { passive: false });
-// When closing the popup
+  }, {
+    passive: false
+  }); // When closing the popup
 
   setTimeout(function () {
     $('.notify-looted-section').removeClass('show-notify-looted');
@@ -112,11 +122,13 @@ function showNotifyLooted(msg) {
 function showModalSlideUp(modalName) {
   $(modalName).addClass('slide-up');
   document.body.classList.add('fixed');
-  window.addEventListener("touchmove", function(e) {
+  window.addEventListener("touchmove", function (e) {
     if (!e.target.closest('.scroll-section-content')) {
       e.preventDefault();
     }
-  }, { passive: false });
+  }, {
+    passive: false
+  });
   var btnClose = $(modalName).find('.btn-close');
   $(btnClose).click(function () {
     $(modalName).removeClass('slide-up');
