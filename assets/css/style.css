@@ -2792,6 +2792,9 @@ screen > div {
   .miner-rank .gdm-bar .gdm-bar-item .item-right .small-text {
     font-size: 13px;
   }
+  .miner-event.modalMinerRank #panel-3 .gdm-bar .gdm-bar-item .item-right .text {
+    max-width: initial;
+  }
   .miner-event .gdm-bar .gdm-bar-item .item-right .text {
     max-width: 92px;
   }
